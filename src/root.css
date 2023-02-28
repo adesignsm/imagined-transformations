@@ -1,0 +1,138 @@
+/* 
+
+=====SITE STYLE SHEET========
+
+  1. Variable CSS Styles
+  2. Typography Styles
+  3. Global Styles
+  4. Page Styles
+  5. Media Queries Styles
+
+  Note: Components and Routes Pages are styled within their own folder
+
+
+
+/*
+========================================
+1. Variable CSS Styles
+======================================== */
+:root {
+    --primary-txt: #FFFFFF;
+    --secondary-txt: ;
+    --primary-background: ;
+    --secondary-background: ;
+}
+
+/*
+======================================== 
+2. Typography Styles
+======================================== */
+@import url('https://fonts.googleapis.com/css2?family=Gloock&family=Inter&display=swap');
+
+p {
+    font-family: 'Inter', sans-serif;
+}
+
+h1, h2, h3 {
+    font-family: 'Gloock', serif;
+}
+
+
+/*
+========================================
+3. Global Styles
+======================================== */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+    max-width: 100vw;
+    max-height: 100vh;
+}
+
+main {
+    overflow-x: hidden;
+}
+
+body,
+button,
+input,
+textarea {
+    font-family: "Intern", sans-serif;
+    font-size: 1rem;
+}
+
+button {
+    transition: all 0.5s;
+    cursor: pointer;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/*
+========================================
+  4. Layout
+======================================== */
+
+.section {
+    padding: 6rem 0 2rem;
+}
+
+.section__title {
+    font-size: 2rem;
+    color: var(--primary-txt);
+}
+
+.section__subtitle{
+    display: flex;
+    flex-direction: column;
+    font-size: 1.5rem;
+    margin: 0 0 4rem 0;
+}
+
+.section__title, 
+.section__subtitle {
+  text-align: center;
+}
+
+.container {
+  max-width: 968px;
+  margin: 0 auto;
+}
+
+.grid {
+  display: grid;
+  gap: 1.5rem;
+}
+
+/*
+========================================
+  5. Media Queries Styles
+======================================== */
+
+/*=========== BREAKPOINTS =============*/
+/*Large  Screens and Devices (e.g.:DESKTOPS)*/
+@media screen and (max-width: 992px) {
+}
+
+/*Medium Screens and Devices (e.g.:TABLETS)*/
+@media screen and (max-width: 768px) {
+}
+
+@media screen and (max-width: 576px) {
+}
+
+/*Small Screens and Devices (e.g.:MOBILE)*/
+@media screen and (max-width: 390px) {
+}
