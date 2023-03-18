@@ -1,0 +1,26 @@
+.home__title {
+    width:80rem;
+    font-size: 9.37rem;
+    font-weight: 400;
+    z-index: 5;
+}
+
+.home__title #title__imagined::after {
+    content: "calm, confidence, & clarity";
+    font-size: var(--normal-text);
+    font-family: var(--gloock-font);
+    position: relative;
+    top: -2.8rem;
+    padding-left: 3rem;
+}
+
+.home__name{
+    padding: 0 0 2rem 0;
+}
+
+.home__content {
+    display: grid;
+    grid-template-columns: repeat(5, 345px);
+    column-gap: 4rem;
+    line-height: 30px;
+}

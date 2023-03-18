@@ -1,0 +1,41 @@
+
+.servicetitle__container {
+    padding: 3rem 0 1rem;
+    display: flex;
+}
+
+.service__title {
+    font-size: 7.5rem;
+}
+
+.service__title::after {
+    content: "Services";
+    font-size: 1.87rem;
+    position: relative;
+    top: -1.5rem;
+    margin-left: 5rem;
+}
+
+.service__container {
+    max-width: 100%;          
+    grid-template-columns: repeat(3, 18.5%);
+}
+
+.service {
+    padding: 1rem;
+    background-color: rgba(217, 217, 217, 0.5);
+    backdrop-filter: blur(50px);
+    border-radius: 15px;
+    text-align: center;
+
+}
+
+.service__subtitle {
+    font-size: 1.87rem;
+    padding-bottom: 1rem;
+}
+
+.service__content {
+    font-size: 1.06rem;
+    line-height: 18px;
+}

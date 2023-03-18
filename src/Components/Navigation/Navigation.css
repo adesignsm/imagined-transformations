@@ -1,0 +1,46 @@
+.navigation {
+    max-width: 100%;
+    color: black;
+    display: flex;
+    position: fixed;
+    right: 0;
+    top: 25%;
+    z-index: 4;
+}
+
+
+
+.navigation ul > li {
+    list-style: none;
+}
+
+.not-active{
+    cursor: pointer;
+    height: 20px;
+    width: 20px;
+    margin: 4rem 2rem;
+    background-color: transparent;
+    border: 1px solid var(--primary-txt);
+    border-radius: 50%;
+    display: flex;
+    flex-direction: column;
+    transition: background-color 0.4s ease;
+}
+
+.not-active:hover{
+    background-color: #FFF;
+}
+
+.active {
+    background-color: #FFF;
+    cursor: pointer;
+    height: 20px;
+    width: 20px;
+    margin: 4rem 2rem;
+    background-color: transparent;
+    border: 1px solid var(--primary-txt);
+    border-radius: 50%;
+    display: flex;
+    flex-direction: column;
+    transition: background-color 0.4s ease;
+}
