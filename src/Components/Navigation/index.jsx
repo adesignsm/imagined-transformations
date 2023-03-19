@@ -13,8 +13,8 @@ export const Navigation = () => {
           {Links.map((link, i) => {
             return (
               <li key={i}>
-                <NavLink to={link.to}>
-                  <button className="nav-link"></button>
+                <NavLink  className="nav-link" to={link.to} activeClassName="active">
+              
                 </NavLink>
               </li>
             );

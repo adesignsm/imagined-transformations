@@ -6,7 +6,7 @@ import { NextPageButton } from "../../Components/NextPageButton";
 
 export const Services = () => {
   return (
-    <section className="services section">
+    <section transition-style="in:wipe:right" className="services section">
       <div className="services__container container grid">
         <div className="service_title__container">
           <h2 className="service__header grid">
@@ -92,7 +92,7 @@ export const Services = () => {
         </div>
       </div>
 
-      <Link to="/">
+      <Link to="/contact">
         <NextPageButton />
       </Link>
     </section>

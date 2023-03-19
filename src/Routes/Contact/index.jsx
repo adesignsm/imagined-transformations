@@ -39,7 +39,7 @@ export const Contact = () => {
 
   return (
 
-    <section className="contact section">
+    <section transition-style="in:wipe:right" className="contact section" >
       <div className="contact__container container grid">
         
         {/*TITLE CONTAINER*/}    

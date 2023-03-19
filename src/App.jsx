@@ -13,6 +13,8 @@ import { Contact } from "./Routes/Contact";
 import { Services } from "./Routes/Services";
 import { Testimonials } from "./Routes/Testimonials";
 
+import 'transition-style';
+
 const App = () => {
   return (
     <div className="App">
@@ -20,7 +22,7 @@ const App = () => {
       <Navigation />
 
       {/*ROUTES*/}
-      <main className="main">
+      <main className="main" >
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />

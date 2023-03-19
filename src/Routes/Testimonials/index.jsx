@@ -6,7 +6,7 @@ import { NextPageButton } from "../../Components/NextPageButton";
 
 export const Testimonials = () => {
   return (
-    <section className="testimonials section">
+    <section transition-style="in:wipe:right" className="testimonials section">
       <div className="testimonials__section container grid">
         <div className="test_title__container">
           <h2 className="testimonial__header">

@@ -8,12 +8,9 @@ export const NextPageButton = () => {
     
     const [show, setShow] = useState(false)
 
-    const linkData = Links;
-
-
     
     useEffect(() => {
-        setTimeout(() => setShow(true), 3000);
+        setTimeout(() => setShow(true), 2000);
       }, []);  
 
 	

@@ -7,13 +7,13 @@ import { NextPageButton } from "../../Components/NextPageButton";
 
 export const Home = () => {
   return (
-    <section className="home section">
+    <section transition-style="in:wipe:right" className="home section">
       <div className="home__container container grid">
         <div className="home_title__container">
           <h2 className="home__header grid">
             <span id="home-title-first">Imagine</span>
             <span id="home-title-second">calm, confidence, & clarity</span>
-            <span id="hometitle-third">Transformations</span>
+            <span id="home-title-third">Transformations</span>
           </h2>
         </div>
         <p className="home__name">Catherine Davies</p>
@@ -31,11 +31,12 @@ export const Home = () => {
           </p>
           <p>With my help you achieve more than ever before.</p>
         </div>
-      </div>
 
       <Link to="/about">
         <NextPageButton />
       </Link>
+      </div>
+
     </section>
   );
 };
