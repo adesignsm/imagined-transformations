@@ -1,11 +1,16 @@
- 
-.about-header {
-    width: 55.8%;
+.about {
+    max-width: 100%;
+    max-height: 100%;
+  }
+
+
+.about__header {
     font-style: normal;
     font-weight: 400;
     font-size: 7.5rem;
     line-height: 145px;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 450px 1fr;
+    
 }
 #title-first {
     font-family: var(--inter-font);
@@ -15,9 +20,12 @@
 }
 #title-forth {
     font-size: 1.5rem;
+    display: flex;
+    justify-content: start;
+    align-items: center;
 }
 .about__content {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    grid-column-gap: 2rem;  
+    column-gap: 1.5rem;     
 }

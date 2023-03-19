@@ -1,20 +1,48 @@
 .header{
     margin-top: 2rem;
-    position: relative;
     border-bottom: .2rem solid var(--primary-txt);
-    height: 80px;
 }
 
 .header__container {
-    margin-bottom: 3rem;
+    margin-bottom: 1rem;
+    justify-items: end;
 
 }
 
 .contact-link {
     max-width: 15rem;
     font-weight: 400;
-    line-height: 30px;
-    position: absolute;
-    right: 0;
     color: var(--primary-txt);
+
+}
+
+
+@media screen and (max-width: 1024px) {
+
+}
+
+@media screen and (max-width: 768px) {
+}
+
+/*Small Screens and Devices (e.g.:MOBILE)*/
+@media screen and (max-width: 480px) {
+    .header {
+        max-width: 90%;
+    }
+
+    .header__container {
+        margin-bottom: 3rem;
+    
+    }
+    
+    .contact-link {
+        max-width: 10rem;
+        font-weight: 400;
+        line-height: 30px;
+        position: absolute;
+        right: 0;
+    }
+    .contact-link p {
+        font-size: 1.2rem;
+    }
 }

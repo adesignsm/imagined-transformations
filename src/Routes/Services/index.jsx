@@ -1,15 +1,21 @@
 import React from "react";
 import "./Services.css";
 
+import { Link } from "react-router-dom";
+import { NextPageButton } from "../../Components/NextPageButton";
+
 export const Services = () => {
   return (
     <section className="services section">
-      <div className="services__section container grid">
-        <div className="servicetitle__container">
-          <h2 className="service__title">How I can help</h2>
+      <div className="services__container container grid">
+        <div className="service_title__container">
+          <h2 className="service__header grid">
+            <span id="serv-title-one">How I can help</span>
+            <span id="serv-title-two">Services</span> 
+          </h2>
         </div>
 
-        <div className="service__container grid">
+        <div className="service__section grid">
           <div className="service">
             <h3 className="service__subtitle">Get excited about your future</h3>
             <p className="service__content">
@@ -85,6 +91,10 @@ export const Services = () => {
           </div>
         </div>
       </div>
+
+      <Link to="/">
+        <NextPageButton />
+      </Link>
     </section>
   );
 };

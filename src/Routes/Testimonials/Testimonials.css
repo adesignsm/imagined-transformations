@@ -1,39 +1,41 @@
 .testimonials {
+    max-width: 100%;
+    max-height: 100%;
 }
 
-.title__container {
-    max-width: 57rem;
-    padding: 3rem 0 2rem 0;
+.test_title__container{
+width: 70%;
 }
 
-.testimonial__title {
+.testimonial__header {
+    font-style: normal;
+    font-weight: 400;
     font-size: 7.5rem;
+    line-height: 145px;
 }
 
-.testimonial__title::after {
-    content: " Testimonials";
-    font-size: 1.56rem;
-    text-align: center;
+#test-title-two {
+    font-size: 1.5rem;
     position: relative;
-    top: -1.4rem;
-    left:9rem;
+    left: 9rem;
+    top: -1rem;
 }
 
 .testimonials__container {
     display: grid;
-    grid-template-columns: repeat(3, 31%);
+    grid-template-columns: repeat(3, 32%);
     column-gap: 1rem;
 }
 
 .testimonial {
-    height: 380px;
+    max-width: 100%;
     background-color: rgba(255, 255, 255, 0.393);
     border-radius: 15px;
 }
 
 .testimonial__content {
     padding: 2rem 2rem;
-    max-width: 75%;
+    aspect-ratio: 2/1;
 }
 
 .clients {
