@@ -141,12 +141,21 @@ gap: 1.5rem;
 @media screen and (max-width: 768px) {
 }
 
-@media screen and (max-width: 576px) {
-}
 
 /*Small Screens and Devices (e.g.:MOBILE)*/
 @media screen and (max-width: 480px) {
+
+  * {
+    margin: 0;
+    padding: 0;
+  }
+
   body {
+    overflow: visible;
     overflow-x: hidden;
     }
+
+  p {
+    font-size: 1rem;
+  }
 }

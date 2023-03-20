@@ -83,7 +83,7 @@ export const Contact = () => {
                 Phone:{" "}
               </label>
               <input
-                type="number"
+                type="text"
                 id="phone"
                 placeholder="Enter your phone number"
               />

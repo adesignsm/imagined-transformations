@@ -10,7 +10,7 @@ export const NextPageButton = () => {
 
     
     useEffect(() => {
-        setTimeout(() => setShow(true), 2000);
+        setTimeout(() => setShow(true), 5000);
       }, []);  
 
 	

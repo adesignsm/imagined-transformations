@@ -16,6 +16,9 @@
 
 }
 
+.mobile__message{
+    display: none;
+}
 
 @media screen and (max-width: 1024px) {
 
@@ -28,21 +31,19 @@
 @media screen and (max-width: 480px) {
     .header {
         max-width: 90%;
-    }
-
-    .header__container {
-        margin-bottom: 3rem;
-    
+        margin-top: 0;
     }
     
     .contact-link {
-        max-width: 10rem;
-        font-weight: 400;
-        line-height: 30px;
-        position: absolute;
-        right: 0;
+        display: none;
     }
-    .contact-link p {
-        font-size: 1.2rem;
+    .mobile__message {
+        display: flex;
+        font-size: 3rem;
+        flex-direction: row-reverse;
+        color: #FFF;
+    }
+    .uil-envelope {
+        color: #FFF;
     }
 }

@@ -18,18 +18,18 @@ export const Home = () => {
         </div>
         <p className="home__name">Catherine Davies</p>
         <div className="home__content">
-          <p>
+          <p className="home__quote">
             Imagined Transformations is here 
             <br /> to help you, step by step,
             to achieve 
             <br /> the best version of yourself.
           </p>
-          <p>
+          <p className="home__quote">
             Find your new empowered self
              <br /> and eliminate the negative
             thoughts and feelings that hold you back.
           </p>
-          <p>With my help you achieve more than ever before.</p>
+          <p className="home__quote">With my help you achieve more than ever before.</p>
         </div>
 
       <Link to="/about">
