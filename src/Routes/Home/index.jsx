@@ -1,13 +1,15 @@
 import React from "react";
-import { Link } from "react-router-dom";
 import "./Home.css";
 
-import { NextPageButton } from "../../Components/NextPageButton";
+import { useNav } from "../../Hooks/useNav";
 
 
 export const Home = () => {
+
+  const homeRef = useNav("home");
+
   return (
-    <section transition-style="in:wipe:right" className="home section">
+    <section ref={homeRef} className="home section" id="home">
       <div className="home__container container grid">
         <div className="home_title__container">
           <h2 className="home__header grid">
@@ -32,9 +34,6 @@ export const Home = () => {
           <p className="home__quote">With my help you achieve more than ever before.</p>
         </div>
 
-      <Link to="/about">
-        <NextPageButton />
-      </Link>
       </div>
 
     </section>

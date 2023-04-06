@@ -1,12 +1,14 @@
-import React from "react";
-import { Link } from "react-router-dom";
+import React, { useRef } from "react";
 import "./About.css";
+import { useNav } from "../../Hooks/useNav";
 
-import { NextPageButton } from "../../Components/NextPageButton";
 
 export const About = () => {
+
+  const aboutRef = useNav("about");
+
   return (
-    <section transition-style="in:wipe:right"  className="about section" >
+    <section ref={aboutRef} className="about section" id="about">
       <div className="about__container container grid">
         <div className="about_title__container">
           <h2 className="about__header grid">
@@ -45,9 +47,7 @@ export const About = () => {
           </p>
         </div>
       </div>
-      <Link to="/testimonials">
-        <NextPageButton />
-      </Link>
+
     </section>
   );
 };

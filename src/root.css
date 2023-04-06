@@ -57,24 +57,29 @@ h1, h2, h3, h4, h5, h6 {
 * {
 margin: 0;
 padding: 0;
-box-sizing: 0;
+box-sizing: border-box;
 }
 
 html {
 scroll-behavior: smooth;
 background-color: #0022EE;
-
-
 }
 
 body {
-  max-width: 100%;
-  max-height: 100%;
-  overflow: hidden;
+  overflow-y: hidden;
+  overflow-x: scroll;
+
 }
 
 main {
+  max-height: 100vh;
+  width: 500vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
 }
+
 
 body,
 button,
@@ -110,11 +115,11 @@ color: #000;
 ======================================== */
 
 .section {
-  max-width: 100%;
-  max-height: 100%;
-  padding: 4rem 0 2rem;
-}
+  width: 100%;
+  height: 100vh;
+  padding: 8rem 0 2rem;
 
+}
 
 .container {
 max-width: 90%;
@@ -127,6 +132,7 @@ gap: 1.5rem;
 }
 
 
+
 /*
 ========================================
 5. Media Queries Styles
@@ -134,7 +140,81 @@ gap: 1.5rem;
 
 /*=========== BREAKPOINTS =============*/
 /*Large  Screens and Devices (e.g.:DESKTOPS)*/
-@media screen and (max-width: 992px) {
+@media screen and (max-width: 1200px) {
+
+* {
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+
+html {
+scroll-behavior: smooth;
+background-color: #0022EE;
+overflow-x: hidden;
+}
+
+body {
+  overflow-y: hidden;
+  overflow-x: scroll;
+
+}
+
+main {
+  max-height: 100vh;
+  width: 600vw;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+
+body,
+button,
+input,
+textarea {
+  font-family: "Intern", sans-serif;
+  font-size: 1rem;
+  color: var(--primary-txt);
+  background-color: transparent;
+}
+
+input {
+  color: #000;
+}
+
+button {
+  transition: all 0.5s;
+  cursor: pointer;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+a {
+text-decoration: none;
+color: #000;
+}
+
+
+.section {
+  width: 100%;
+  height: 100%;
+  padding: 1rem 0;
+}
+
+.container {
+max-width: 90%;
+margin: 0 auto;
+}
+
+.grid {
+display: grid;
+gap: 1.5rem;
+} 
 }
 
 /*Medium Screens and Devices (e.g.:TABLETS)*/
@@ -151,10 +231,19 @@ gap: 1.5rem;
   }
 
   body {
-    overflow: visible;
     overflow-x: hidden;
-    }
-
+    overflow-y: scroll;
+    width: 100%;
+    height: 100%;
+  }
+  
+  main {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+  
   p {
     font-size: 1rem;
   }

@@ -1,5 +1,6 @@
 import React, {useState} from "react";
 import "./Contact.css";
+import { useNav } from "../../Hooks/useNav";
 
 export const Contact = () => {
   
@@ -8,6 +9,8 @@ export const Contact = () => {
     ref: https://w3collective.com/react-contact-form/
 */}
   const [status, setStatus] = useState("Submit");
+
+  const contactRef = useNav("contact");
 
   const handleSubmit = async (e) => {
     e.preventDefault();
@@ -39,7 +42,7 @@ export const Contact = () => {
 
   return (
 
-    <section transition-style="in:wipe:right" className="contact section" >
+    <section ref={contactRef} className="contact section" id="contact">
       <div className="contact__container container grid">
         
         {/*TITLE CONTAINER*/}    

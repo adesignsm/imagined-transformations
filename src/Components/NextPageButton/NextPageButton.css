@@ -1,8 +1,7 @@
-.button__container {
+.show_button__container {
     position: fixed;
     bottom: 3rem;
     right: 3rem;
-    color: #fff;
 }
 
 .next-page-button {
@@ -10,6 +9,31 @@
     height: 130px;
     border: 3px solid var(--primary-txt);
     border-radius: 50%;
+    color: #fff;
+
+}
+.next-page-button2 {
+    width: 130px;
+    height: 130px;
+    border: 3px solid var(--primary-txt);
+    border-radius: 50%;
+    color: #fff;
+
+}
+.next-page-button3 {
+    width: 130px;
+    height: 130px;
+    border: 3px solid var(--primary-txt);
+    border-radius: 50%;
+    color: #fff;
+
+}
+.next-page-button4 {
+    width: 130px;
+    height: 130px;
+    border: 3px solid var(--primary-txt);
+    border-radius: 50%;
+    color: #fff;
 
 }
 
@@ -24,7 +48,30 @@
 }
 
 /*Large  Screens and Devices (e.g.:DESKTOPS)*/
-@media screen and (max-width: 992px) {
+@media screen and (max-width: 1200px) {
+    .show_button__container {
+        position: fixed;
+        bottom: 2rem;
+        right: 1rem;
+        color: #fff;
+    }
+    
+    .next-page-button {
+        width: 2.5rem;
+        height: 2.5rem;
+        border: 3px solid var(--primary-txt);
+        border-radius: 50%
+    }
+
+    .uil-arrow-right {
+        font-size: 2rem;
+    }
+    
+    .next-page-button:hover {
+        background-color: #FFF;
+        color: #0022EE;
+    }
+    
 }
 
 /*Medium Screens and Devices (e.g.:TABLETS)*/
@@ -34,9 +81,9 @@
 
 /*Small Screens and Devices (e.g.:MOBILE)*/
 @media screen and (max-width: 480px) {
-    .button__container {
+    .show_button__container {
         position: fixed;
-        bottom: 1rem;
+        bottom: 2rem;
         right: 1rem;
         color: #fff;
     }

@@ -1,12 +1,14 @@
 import React from "react";
 import "./Testimonials.css";
+import { useNav } from "../../Hooks/useNav";
 
-import { Link } from "react-router-dom";
-import { NextPageButton } from "../../Components/NextPageButton";
 
 export const Testimonials = () => {
+
+  const testimonialRef = useNav("testimonials");
+
   return (
-    <section transition-style="in:wipe:right" className="testimonials section">
+    <section ref={testimonialRef} className="testimonials section" id="testimonials">
       <div className="testimonials__section container grid">
         <div className="test_title__container">
           <h2 className="testimonial__header">
@@ -59,9 +61,7 @@ export const Testimonials = () => {
           </div>
         </div>
       </div>
-      <Link to="/services">
-        <NextPageButton />
-      </Link>      
+  
     </section>
   );
 };

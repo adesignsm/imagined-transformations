@@ -1,12 +1,14 @@
 import React from "react";
 import "./Services.css";
+import { useNav } from "../../Hooks/useNav";
 
-import { Link } from "react-router-dom";
-import { NextPageButton } from "../../Components/NextPageButton";
 
 export const Services = () => {
+
+  const servicesRef = useNav("services");
+
   return (
-    <section transition-style="in:wipe:right" className="services section">
+    <section ref={servicesRef} className="services section" id="services">
       <div className="services__container container grid">
         <div className="service_title__container">
           <h2 className="service__header grid">
@@ -92,9 +94,6 @@ export const Services = () => {
         </div>
       </div>
 
-      <Link to="/contact">
-        <NextPageButton />
-      </Link>
     </section>
   );
 };
