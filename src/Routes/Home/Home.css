@@ -23,19 +23,34 @@
 }
 
 .home__content {
+  justify-content: space-between;
+  line-height: 30px;
+  /*
   display: grid;
   grid-template-columns: repeat(5, 25%);
   column-gap: 3rem;
   line-height: 30px;
+  */
+}
+
+.home__quote {
+  width: 32%;
+  font-size: 1.2rem;
 }
 
 @media screen and (max-width: 1201px) {
   .home {
+    /*
     max-width: 100%;
     height: 100vh;
+    */
   }
-  
+
   .home__header {
+    grid-template-columns: 1fr;
+    font-size: 6.5rem;
+    line-height: 70px;
+    /*
     width: 100%;
     font-style: normal;
     font-weight: 400;
@@ -43,28 +58,57 @@
     line-height:100px;
     grid-template-columns: 500px 2fr;
     padding-bottom: 1rem;
+    */
   }
   
   #home-title-second {
     font-size: 1.5rem;
   }
   
-  
   .home__name {
     padding: 0 0 3rem 0;
   }
   
   .home__content {
+    /*
     display: grid;
     grid-template-columns: repeat(5, 25%);
     column-gap: 3rem;
     line-height: 30px;
+    */
   }
+
+  /*
+  .home__quote {
+    width: 100%;
+  }
+  .home__quote:not(:first-child){
+    margin-top: 3rem;
+  }
+  */
+
 }
 
 @media screen and (max-width: 768px) {
-  .section {
-    padding: 2rem 0 2rem;
+  .home__header {
+    font-size: 5rem;
+    /*
+    width: 100%;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 7.5rem;
+    line-height:100px;
+    grid-template-columns: 500px 2fr;
+    padding-bottom: 1rem;
+    */
+  }
+
+  .home__quote {
+    width: 100%;
+  }
+
+  .home__quote:not(:first-child){
+    margin-top: 2rem;
   }
 }
 
@@ -72,11 +116,16 @@
 @media screen and (max-width: 480px) {
     
   .home {
+    /*
     max-width: 100%;
     height: 100vh;
+    */
   }
 
   .home__header {
+    font-size: 2.6rem;
+    line-height: 3px;
+    /*
     display: flex;
     flex-direction: column;
     flex: 1 0 auto;
@@ -84,6 +133,7 @@
     font-size: 2.6rem;
     line-height: 3px;
     padding: 1.5rem 1.5rem 1.2rem 0;
+    */
   }
 
   .home__header span {
@@ -106,14 +156,11 @@
     padding: 0 0 1rem 0;
   }
   
+  /*
   .home__content {
     display: flex;
     flex-direction: column;
     line-height: 0px;
   }
-  .home__quote {
-    padding: 1rem 0;
-  }
+  */
 }
-
-

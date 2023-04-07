@@ -2,10 +2,9 @@ import React from "react";
 import "./Home.css";
 
 import { useNav } from "../../Hooks/useNav";
-
+import { NextPageButton } from "../../Components/NextPageButton";
 
 export const Home = () => {
-
   const homeRef = useNav("home");
 
   return (
@@ -19,21 +18,21 @@ export const Home = () => {
           </h2>
         </div>
         <p className="home__name">Catherine Davies</p>
-        <div className="home__content">
+        <div className="home__content flex">
           <p className="home__quote">
-            Imagined Transformations is here 
-            <br /> to help you, step by step,
-            to achieve 
-            <br /> the best version of yourself.
+            Imagined Transformations is here
+             to help you, step by step, to achieve
+            the best version of yourself.
           </p>
           <p className="home__quote">
             Find your new empowered self
-             <br /> and eliminate the negative
-            thoughts and feelings that hold you back.
+            and eliminate the negative thoughts and feelings that hold
+            you back.
           </p>
-          <p className="home__quote">With my help you achieve more than ever before.</p>
+          <p className="home__quote">
+            With my help you achieve more than ever before.
+          </p>
         </div>
-
       </div>
 
     </section>

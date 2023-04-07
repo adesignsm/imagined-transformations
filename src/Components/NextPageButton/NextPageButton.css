@@ -12,34 +12,12 @@
     color: #fff;
 
 }
-.next-page-button2 {
-    width: 130px;
-    height: 130px;
-    border: 3px solid var(--primary-txt);
-    border-radius: 50%;
-    color: #fff;
-
-}
-.next-page-button3 {
-    width: 130px;
-    height: 130px;
-    border: 3px solid var(--primary-txt);
-    border-radius: 50%;
-    color: #fff;
-
-}
-.next-page-button4 {
-    width: 130px;
-    height: 130px;
-    border: 3px solid var(--primary-txt);
-    border-radius: 50%;
-    color: #fff;
-
-}
 
 .uil-arrow-right {
-    font-size: 5rem;
+    font-size: 7rem;
     z-index: 12;
+    position: relative;
+    top: 0.5rem;
 }
 
 .next-page-button:hover {

@@ -17,7 +17,7 @@ export const Services = () => {
           </h2>
         </div>
 
-        <div className="service__section grid">
+        <div className="service__section flex">
           <div className="service">
             <h3 className="service__subtitle">Get excited about your future</h3>
             <p className="service__content">

@@ -13,30 +13,25 @@ import { Testimonials } from "./Routes/Testimonials";
 import { NextPageButton } from "./Components/NextPageButton";
 import { NavProvider } from "./Context/NavContext";
 
-
 const App = () => {
-  
-
   return (
     <div className="App">
-
       <NavProvider>
         <Header />
         <Navigation />
 
         {/*ROUTES*/}
-        <main className="main items" >
-            <Home />
-            <About />
-            <Testimonials />
-            <Services />
-            <Contact />
+        <main className="main">
+          <Home />
+          <About />
+          <Testimonials />
+          <Services />
+          <Contact />
         </main>
 
         <Background />
-{   /*     <NextPageButton />
-*/}      </NavProvider>
-
+        <NextPageButton />
+      </NavProvider>
     </div>
   );
 };

@@ -15,6 +15,7 @@ export const Navigation = () => {
   const renderNavLinks = (content) => {
     const scrollToId = `${content}`;
 
+
     const handleClickNav = () => {
       document
         .getElementById(scrollToId)

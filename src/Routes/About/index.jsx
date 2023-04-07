@@ -1,6 +1,7 @@
 import React, { useRef } from "react";
 import "./About.css";
 import { useNav } from "../../Hooks/useNav";
+import { NextPageButton } from "../../Components/NextPageButton";
 
 
 export const About = () => {
@@ -20,7 +21,7 @@ export const About = () => {
             </span>
           </h2>
         </div>
-        <div className="about__content">
+        <div className="about__content flex">
           <p>
             I will guide and coach you step by step to overcome past
             experiences, fears, or thoughts that overwhelm you and limits your

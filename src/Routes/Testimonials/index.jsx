@@ -16,7 +16,7 @@ export const Testimonials = () => {
             <span id="test-title-two">Testimonials</span>
           </h2>
         </div>
-        <div className="testimonials__container">
+        <div className="testimonials__container flex">
           <div className="testimonial">
             <div className="testimonial__content">
               <h3 className="clients">Rupelyn O - Young Professional</h3>

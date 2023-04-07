@@ -4,15 +4,13 @@
 }
 
 .contact__container {
-    grid-template-columns: repeat(2 , 2fr);
-    padding: 3rem 0;
     font-family: var(--gloock-font);
     height: 100%;
-
+    justify-content: space-between;
 }
 
 .contact__title__container {
-    max-width: 60%;    
+    width: 40%;    
 }
 
 .title__content{
@@ -29,7 +27,7 @@
 
 .contact__form {
     background-color: rgba(217, 217, 217, 0.5);
-    max-width: 85%;
+    width: 50%;
     border-radius: 15px;
     padding: 2rem;
 }
@@ -38,7 +36,6 @@
     display: flex;
     flex-direction: column;
     padding: .5rem 0;
-
 }
 
 .label__title {
@@ -66,11 +63,30 @@ textarea::placeholder {
 }
 
 /*Large  Screens and Devices (e.g.:DESKTOPS)*/
-@media screen and (max-width: 992px) {
+@media screen and (max-width: 1201px) {
+    .contact__title {
+        font-size: 6.5rem;
+    }
+
+    .title__content{
+        font-size: 1.3rem;
+    }
 }
 
 /*Medium Screens and Devices (e.g.:TABLETS)*/
 @media screen and (max-width: 768px) {
+    .contact__title {
+        font-size: 5rem;
+    }
+    
+    .contact__title__container,
+    .contact__form {
+        width: 100%;    
+    }
+
+    .contact__form {
+        margin-top: 2rem;   
+    }
 }
 
 
@@ -109,7 +125,6 @@ textarea::placeholder {
         max-width: 100%;
         border-radius: 15px;
         padding: 2rem;
-        margin: 0 1.5rem;
     }
     
     .contact__content {

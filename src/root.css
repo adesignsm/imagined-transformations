@@ -1,15 +1,11 @@
 /* 
-
 =====SITE STYLE SHEET========
-
   1. Variable CSS Styles
   2. Typography Styles
   3. Global Styles
   4. Page Styles
   5. Media Queries Styles
-
   Note: Components and Routes Pages are styled within their own folder
-
 /*
 ========================================
 1. Variable CSS Styles
@@ -115,22 +111,26 @@ color: #000;
 ======================================== */
 
 .section {
-  width: 100%;
+  width: 100vw;
   height: 100vh;
   padding: 8rem 0 2rem;
 
 }
 
 .container {
-max-width: 90%;
-margin: 0 auto;
+  max-width: 90%;
+  margin: 0 auto;
 }
 
 .grid {
-display: grid;
-gap: 1.5rem;
+  display: grid;
+  gap: 1.5rem;
 }
 
+.flex {
+  display: flex;
+  flex-wrap: wrap;
+}
 
 
 /*
@@ -143,9 +143,11 @@ gap: 1.5rem;
 @media screen and (max-width: 1200px) {
 
 * {
+  /*
 margin: 0;
 padding: 0;
 box-sizing: border-box;
+*/
 }
 
 html {
@@ -201,26 +203,38 @@ color: #000;
 
 
 .section {
+  /*
   width: 100%;
   height: 100%;
   padding: 1rem 0;
+  */
 }
 
 .container {
+  /*
 max-width: 90%;
 margin: 0 auto;
+*/
 }
 
 .grid {
+  /*
 display: grid;
 gap: 1.5rem;
+*/
 } 
 }
 
 /*Medium Screens and Devices (e.g.:TABLETS)*/
 @media screen and (max-width: 768px) {
+  .container {
+    max-width: 85%;
+  }
+  body {
+    overflow-y: visible;
+    overflow-x: visible;
+  }
 }
-
 
 /*Small Screens and Devices (e.g.:MOBILE)*/
 @media screen and (max-width: 480px) {
@@ -246,5 +260,14 @@ gap: 1.5rem;
   
   p {
     font-size: 1rem;
+  }
+
+  .section {
+    padding: 1rem 0;
+    height: 100%;
+  }
+
+  .section:not(:first-child) {
+    padding: 4rem 0;
   }
 }
