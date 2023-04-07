@@ -4,23 +4,25 @@ import { NavContext } from "../../Context/NavContext";
 import "./NextPageButton.css";
 
 export const NextPageButton = () => {
-
   //Displays next page button
   const [show, setShow] = useState(false);
-  //
+  //display in console where the current page is
   const { activeLinkId } = useContext(NavContext);
 
+  //Dislays next page button after 5 seconds. Also, button will disappear when it hits contact page
   setTimeout(() => {
     window.addEventListener("scroll", function () {
-      const scrollUp = document.querySelector(".next-page-button");
-      //when scroll is higher than 560 viewport height, scroll button (show-scroll) will show
-      if (this.scrollX < 6000) scrollUp.classList.add("show_button__container");
-      else scrollUp.classList.remove("show_button__container");
+      const scrollRight = document.querySelector(".next-page-button");
+      //when scroll is farther than 6000 width, the 'Next Page Button' will disappear
+      if (this.scrollX < 6000 || this.scrollY < 3000)
+        scrollRight.classList.add("show_button__container");
+      else scrollRight.classList.remove("show_button__container");
     });
 
     setShow(true);
-  }, 3000);
+  }, 5000);
 
+  //click handler for 'Next Page Button'
   const handleNextPage = () => {
     if (activeLinkId === "home") {
       document.getElementById("about").scrollIntoView({ behavior: "smooth" });
@@ -41,6 +43,7 @@ export const NextPageButton = () => {
 
   return (
     <>
+      {/*Display right arrow for 'Next Page Button' for small screens to large (481 and above)*/}
       {show && (
         <button
           onClick={handleNextPage}
@@ -52,6 +55,7 @@ export const NextPageButton = () => {
         </button>
       )}
 
+      {/*Display down arrow for 'Next Page Button' for mobile(480 and below)*/}
       {show && (
         <button
           onClick={handleNextPage}

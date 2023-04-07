@@ -43,7 +43,7 @@ export const Contact = () => {
   return (
 
     <section ref={contactRef} className="contact section flex" id="contact">
-      <div className="contact__container container ">
+      <div className="contact__container container flex">
         
         {/*TITLE CONTAINER*/}    
         <div className="contact__title__container">

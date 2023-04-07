@@ -1,6 +1,4 @@
 import React from "react";
-import { Link } from "react-router-dom";
-
 import "./Header.css";
 
 export const Header = () => {
@@ -8,15 +6,15 @@ export const Header = () => {
     <section className="header">
       {/*Text will display for header from 480px and larger*/}
       <div className="header__container container grid">
-        <Link className="contact-link" to="/contact">
+        <a className="contact-link" href="#contact">
           <p className="contact__link">Send a message to Catherine</p>
-        </Link>
+        </a>
       </div>
       {/*Envelope will display from 480px and lower (mobile)*/}
       <div className="mobile__message">
-        <Link to="/contact">
+        <a href="#contact">
           <i class="uil uil-envelope"></i>
-        </Link>
+        </a>
       </div>
     </section>
   );
