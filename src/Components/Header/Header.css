@@ -29,30 +29,33 @@
 }
 
 @media screen and (max-width: 768px) {
-}
 
-/*Small Screens and Devices (e.g.:MOBILE)*/
-@media screen and (max-width: 480px) {
     .header{
         width: 100%;
-        position: relative;
+        position: fixed;
         padding: 1rem 1rem;
     }
     
     .header__container {
-    display: none;
-    }
+        display: none;
+        }
+    
+        .mobile__message {
+            display: flex;
+            font-size: 3rem;
+            flex-direction: row-reverse;
+            color: #FFF;
+            margin-bottom: 1rem;
+            justify-items: end;
+            border-bottom: .2rem solid var(--primary-txt);
+        }
+        .uil-envelope {
+            color: #FFF;
+        }
+}
 
-    .mobile__message {
-        display: flex;
-        font-size: 3rem;
-        flex-direction: row-reverse;
-        color: #FFF;
-        margin-bottom: 1rem;
-        justify-items: end;
-        border-bottom: .2rem solid var(--primary-txt);
-    }
-    .uil-envelope {
-        color: #FFF;
-    }
+/*Small Screens and Devices (e.g.:MOBILE)*/
+@media screen and (max-width: 480px) {
+
+
 }

@@ -1,85 +1,85 @@
 .show_button__container {
-    position: fixed;
-    bottom: 3rem;
-    right: 3rem;
+  position: fixed;
+  bottom: 3rem;
+  right: 3rem;
 }
 
 .next-page-button {
-    width: 130px;
-    height: 130px;
-    border: 3px solid var(--primary-txt);
-    border-radius: 50%;
-    color: #fff;
-
+  width: 130px;
+  height: 130px;
+  border: 3px solid var(--primary-txt);
+  border-radius: 50%;
+  color: #fff;
 }
 
 .uil-arrow-right {
-    font-size: 7rem;
-    z-index: 12;
-    position: relative;
-    top: 0.5rem;
+  font-size: 7rem;
+  z-index: 12;
+  position: relative;
+  top: 0.5rem;
 }
 
 .next-page-button:hover {
-    background-color: #FFF;
-    color: #0022EE;
+  background-color: #fff;
+  color: #0022ee;
+}
+
+#down{
+  display: none;
 }
 
 /*Large  Screens and Devices (e.g.:DESKTOPS)*/
 @media screen and (max-width: 1200px) {
-    .show_button__container {
-        position: fixed;
-        bottom: 2rem;
-        right: 1rem;
-        color: #fff;
-    }
-    
-    .next-page-button {
-        width: 2.5rem;
-        height: 2.5rem;
-        border: 3px solid var(--primary-txt);
-        border-radius: 50%
-    }
+  .show_button__container {
+    position: fixed;
+    bottom: 2rem;
+    right: 1rem;
+    color: #fff;
+  }
 
-    .uil-arrow-right {
-        font-size: 2rem;
-    }
-    
-    .next-page-button:hover {
-        background-color: #FFF;
-        color: #0022EE;
-    }
-    
+  .next-page-button {
+    width: 75px;
+    height: 75px;
+    border: 3px solid var(--primary-txt);
+    border-radius: 50%;
+  }
+
+  .uil-arrow-right {
+    font-size: 3rem;
+    top: 0.2rem;
+  }
+
+  .next-page-button:hover {
+    background-color: #fff;
+    color: #0022ee;
+  }
 }
 
 /*Medium Screens and Devices (e.g.:TABLETS)*/
 @media screen and (max-width: 768px) {
-}
+  .next-page-button {
+    width: 2.5rem;
+    height: 2.5rem;
+  }
 
+  .uil-arrow-right {
+    font-size: 2rem;
+  }
+}
 
 /*Small Screens and Devices (e.g.:MOBILE)*/
 @media screen and (max-width: 480px) {
-    .show_button__container {
-        position: fixed;
-        bottom: 2rem;
-        right: 1rem;
-        color: #fff;
-    }
-    
-    .next-page-button {
-        width: 2.5rem;
-        height: 2.5rem;
-        border: 3px solid var(--primary-txt);
-        border-radius: 50%
+    #right {
+        display: none;
     }
 
-    .uil-arrow-right {
+    #down{
+        display: block;
+    }
+
+    .uil-arrow-down {
         font-size: 2rem;
-    }
-    
-    .next-page-button:hover {
-        background-color: #FFF;
-        color: #0022EE;
-    }
-    
+        position: relative;
+        top: 0.1rem;
+      }
 }

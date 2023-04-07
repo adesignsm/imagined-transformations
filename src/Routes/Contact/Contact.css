@@ -75,6 +75,17 @@ textarea::placeholder {
 
 /*Medium Screens and Devices (e.g.:TABLETS)*/
 @media screen and (max-width: 768px) {
+    .contact {
+        display: block;
+    }
+
+    .contact__container {
+        font-family: var(--gloock-font);
+        height: 100%;
+        justify-content: space-between;
+        display: flex;
+        flex-direction: column;
+    }
     .contact__title {
         font-size: 5rem;
     }

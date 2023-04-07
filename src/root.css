@@ -11,39 +11,41 @@
 1. Variable CSS Styles
 ======================================== */
 :root {
-
-  --primary-background: #0022EE;
+  --primary-background: #0022ee;
   --secondary-background: ;
 
   /*FONTS*/
-  --primary-txt: #FFFFFF;
+  --primary-txt: #ffffff;
   --secondary-txt: ;
 
-  --intern-font: 'Inter', sans-serif;
-  --gloock-font: 'Gloock', serif;
+  --intern-font: "Inter", sans-serif;
+  --gloock-font: "Gloock", serif;
 
   --normal-text: 1.5rem;
-
 }
 
 /*
 ======================================== 
 2. Typography Styles
 ======================================== */
-@import url('https://fonts.googleapis.com/css2?family=Gloock&family=Inter:wght@300&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Gloock&family=Inter:wght@300&display=swap");
 
 p {
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
   color: var(--primary-txt);
   font-size: var(--normal-text);
   line-height: 30px;
 }
 
-h1, h2, h3, h4, h5, h6 {
-  color: #FFFFFF;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: #ffffff;
   font-family: var(--gloock-font);
 }
-
 
 /*
 ========================================
@@ -51,20 +53,19 @@ h1, h2, h3, h4, h5, h6 {
 ======================================== */
 
 * {
-margin: 0;
-padding: 0;
-box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 html {
-scroll-behavior: smooth;
-background-color: #0022EE;
+  scroll-behavior: smooth;
+  background-color: #0022ee;
 }
 
 body {
   overflow-y: hidden;
   overflow-x: scroll;
-
 }
 
 main {
@@ -75,7 +76,6 @@ main {
   flex-direction: row;
   align-items: center;
 }
-
 
 body,
 button,
@@ -102,8 +102,8 @@ img {
 }
 
 a {
-text-decoration: none;
-color: #000;
+  text-decoration: none;
+  color: #000;
 }
 /*
 ========================================
@@ -114,7 +114,6 @@ color: #000;
   width: 100vw;
   height: 100vh;
   padding: 8rem 0 2rem;
-
 }
 
 .container {
@@ -132,7 +131,6 @@ color: #000;
   flex-wrap: wrap;
 }
 
-
 /*
 ========================================
 5. Media Queries Styles
@@ -141,104 +139,119 @@ color: #000;
 /*=========== BREAKPOINTS =============*/
 /*Large  Screens and Devices (e.g.:DESKTOPS)*/
 @media screen and (max-width: 1200px) {
-
-* {
-  /*
+  * {
+    /*
 margin: 0;
 padding: 0;
 box-sizing: border-box;
 */
-}
+  }
 
-html {
-scroll-behavior: smooth;
-background-color: #0022EE;
-overflow-x: hidden;
-}
+  html {
+    scroll-behavior: smooth;
+    background-color: #0022ee;
+    overflow-x: hidden;
+  }
 
-body {
-  overflow-y: hidden;
-  overflow-x: scroll;
+  body {
+    overflow-y: hidden;
+    overflow-x: scroll;
+  }
 
-}
+  main {
+    max-height: 100vh;
+    width: 600vw;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
 
-main {
-  max-height: 100vh;
-  width: 600vw;
-  height: 100%;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-}
+  body,
+  button,
+  input,
+  textarea {
+    font-family: "Intern", sans-serif;
+    font-size: 1rem;
+    color: var(--primary-txt);
+    background-color: transparent;
+  }
 
+  input {
+    color: #000;
+  }
 
-body,
-button,
-input,
-textarea {
-  font-family: "Intern", sans-serif;
-  font-size: 1rem;
-  color: var(--primary-txt);
-  background-color: transparent;
-}
+  button {
+    transition: all 0.5s;
+    cursor: pointer;
+  }
 
-input {
-  color: #000;
-}
+  img {
+    max-width: 100%;
+    height: auto;
+  }
 
-button {
-  transition: all 0.5s;
-  cursor: pointer;
-}
+  a {
+    text-decoration: none;
+    color: #000;
+  }
 
-img {
-  max-width: 100%;
-  height: auto;
-}
-
-a {
-text-decoration: none;
-color: #000;
-}
-
-
-.section {
-  /*
+  .section {
+    /*
   width: 100%;
   height: 100%;
   padding: 1rem 0;
   */
-}
+  }
 
-.container {
-  /*
+  .container {
+    /*
 max-width: 90%;
 margin: 0 auto;
 */
-}
+  }
 
-.grid {
-  /*
+  .grid {
+    /*
 display: grid;
 gap: 1.5rem;
 */
-} 
+  }
 }
 
 /*Medium Screens and Devices (e.g.:TABLETS)*/
 @media screen and (max-width: 768px) {
-  .container {
-    max-width: 85%;
-  }
   body {
     overflow-y: visible;
     overflow-x: visible;
+  }
+
+  .container {
+    max-width: 85%;
+  }
+
+  .section {
+    padding: 8rem 0 2rem;
+  }
+  
+  .container {
+    max-width: 90%;
+    margin: 0 auto;
+  }
+  
+  .grid {
+    display: grid;
+    gap: 1.5rem;
+  }
+  
+  .flex {
+    display: flex;
+    flex-direction: column;
   }
 }
 
 /*Small Screens and Devices (e.g.:MOBILE)*/
 @media screen and (max-width: 480px) {
-
   * {
     margin: 0;
     padding: 0;
@@ -250,20 +263,20 @@ gap: 1.5rem;
     width: 100%;
     height: 100%;
   }
-  
+
   main {
     width: 100%;
     height: 100%;
     display: flex;
     flex-direction: column;
   }
-  
+
   p {
     font-size: 1rem;
   }
 
   .section {
-    padding: 1rem 0;
+    padding: 8rem 0;
     height: 100%;
   }
 
