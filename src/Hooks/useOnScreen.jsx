@@ -8,7 +8,7 @@ export const useOnScreen = (ref) => {
     //console.log(entry); //provides an array, key info are 'target','isIntersecting', and 'isVisible'
     setIsOnScreen(entry.isIntersecting)
   }), {
-    threshold: 0.7
+    threshold: 0.3
   });
 
   useEffect(() => {

@@ -11,14 +11,15 @@ export const NextPageButton = () => {
 
   //Dislays next page button after 5 seconds. Also, button will disappear when it hits contact page
   setTimeout(() => {
+/*
     window.addEventListener("scroll", function () {
       const scrollRight = document.querySelector(".next-page-button");
       //when scroll is farther than 6000 width, the 'Next Page Button' will disappear
-      if (this.scrollX < 6000 || this.scrollY < 3000)
+      if (this.scrollX < 6000 )
         scrollRight.classList.add("show_button__container");
       else scrollRight.classList.remove("show_button__container");
     });
-
+*/
     setShow(true);
   }, 5000);
 
@@ -36,6 +37,8 @@ export const NextPageButton = () => {
         .scrollIntoView({ behavior: "smooth" });
     } else if (activeLinkId === "services") {
       document.getElementById("contact").scrollIntoView({ behavior: "smooth" });
+    } else if (activeLinkId === "contact") {
+      document.getElementById("home").scrollIntoView({ behavior: "smooth" });
     } else {
       return null;
     }

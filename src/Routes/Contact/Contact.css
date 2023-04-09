@@ -5,7 +5,7 @@
 
 .contact__container {
     font-family: var(--gloock-font);
-    height: 100%;
+    max-height: 100%;
     justify-content: space-between;
 }
 
@@ -30,12 +30,15 @@
     width: 50%;
     border-radius: 15px;
     padding: 2rem;
+    max-height: 100%;
+    display: flex;
+    flex-direction: column;
 }
 
 .contact__content {
     display: flex;
     flex-direction: column;
-    padding: .5rem 0;
+    padding: 1rem 0;
 }
 
 .label__title {
@@ -76,8 +79,8 @@ textarea::placeholder {
 /*Medium Screens and Devices (e.g.:TABLETS)*/
 @media screen and (max-width: 768px) {
     .contact {
-
-
+        max-width: 100%;
+        max-height: 100%;
     }
 
     .contact__container {
@@ -90,13 +93,14 @@ textarea::placeholder {
         font-size: 5rem;
     }
     
-    .contact__title__container,
-    .contact__form {
+    .contact__title__container {
         width: 100%;    
     }
 
     .contact__form {
-        margin-top: 2rem;   
+        max-width: 100%;
+        width: 100%;
+        padding: 2rem 4rem;
     }
 }
 
@@ -104,8 +108,7 @@ textarea::placeholder {
 /*Small Screens and Devices (e.g.:MOBILE)*/
 @media screen and (max-width: 480px) {
     .contact {
-        margin: 0;
-        padding: 0;
+
     }
     
     .contact__container {
