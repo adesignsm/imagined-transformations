@@ -2,13 +2,15 @@ import React from "react";
 import "./Testimonials.css";
 import { useNav } from "../../Hooks/useNav";
 
-
 export const Testimonials = () => {
-
   const testimonialRef = useNav("testimonials");
 
   return (
-    <section ref={testimonialRef} className="testimonials section" id="testimonials">
+    <section
+      ref={testimonialRef}
+      className="testimonials section"
+      id="testimonials"
+    >
       <div className="testimonials__section container grid">
         <div className="test_title__container">
           <h2 className="testimonial__header">
@@ -20,9 +22,7 @@ export const Testimonials = () => {
           <div className="testimonial">
             <div className="testimonial__content">
               <h3 className="clients">Rupelyn O - Young Professional</h3>
-              <p className="testimonial__services ">
-                Eliminating Phobias
-              </p>
+              <p className="testimonial__services ">Eliminating Phobias</p>
               <p className="content">
                 "As someone who has suffered from a lifelong irrational fear, I
                 began to lose hope and believed that this fear would be part of
@@ -61,7 +61,6 @@ export const Testimonials = () => {
           </div>
         </div>
       </div>
-  
     </section>
   );
 };

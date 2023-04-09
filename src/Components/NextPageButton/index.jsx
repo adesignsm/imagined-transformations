@@ -9,9 +9,9 @@ export const NextPageButton = () => {
   //display in console where the current page is
   const { activeLinkId } = useContext(NavContext);
 
-  //Dislays next page button after 5 seconds. Also, button will disappear when it hits contact page
+  //Displays next page button after 5 seconds. Also, button will disappear when it hits contact page
   setTimeout(() => {
-/*
+    /*
     window.addEventListener("scroll", function () {
       const scrollRight = document.querySelector(".next-page-button");
       //when scroll is farther than 6000 width, the 'Next Page Button' will disappear
@@ -23,7 +23,7 @@ export const NextPageButton = () => {
     setShow(true);
   }, 5000);
 
-  //click handler for 'Next Page Button'
+  //click handler for 'Next Page Button', will scroll to next page and resets in the contact section
   const handleNextPage = () => {
     if (activeLinkId === "home") {
       document.getElementById("about").scrollIntoView({ behavior: "smooth" });

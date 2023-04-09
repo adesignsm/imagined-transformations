@@ -1,13 +1,14 @@
-import React, {useState} from "react";
+import React, { useState } from "react";
 import "./Contact.css";
 import { useNav } from "../../Hooks/useNav";
 
 export const Contact = () => {
-  
-  {/* 
+  {
+    /* 
   ----Email handler----
     ref: https://w3collective.com/react-contact-form/
-*/}
+*/
+  }
   const [status, setStatus] = useState("Submit");
 
   const contactRef = useNav("contact");
@@ -15,7 +16,7 @@ export const Contact = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     setStatus("Sending...");
-    const { name, email, phone, subject, message} = e.target.elements;
+    const { name, email, phone, subject, message } = e.target.elements;
     let details = {
       name: name.value,
       email: email.value,
@@ -23,7 +24,7 @@ export const Contact = () => {
       subject: subject.value,
       message: message.value,
     };
-/*
+    /*
     let response = await fetch("http://localhost:5000/contact", {
       method: "POST",
       headers: {
@@ -41,11 +42,9 @@ export const Contact = () => {
   };
 
   return (
-
-    <section ref={contactRef} className="contact section flex" id="contact">
+    <section ref={contactRef} className="contact section" id="contact">
       <div className="contact__container container flex">
-        
-        {/*TITLE CONTAINER*/}    
+        {/*TITLE CONTAINER*/}
         <div className="contact__title__container">
           <h2 className="contact__title">Contact</h2>
           <p className="title__content">

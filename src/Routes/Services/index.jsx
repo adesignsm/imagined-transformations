@@ -2,9 +2,7 @@ import React from "react";
 import "./Services.css";
 import { useNav } from "../../Hooks/useNav";
 
-
 export const Services = () => {
-
   const servicesRef = useNav("services");
 
   return (
@@ -13,7 +11,7 @@ export const Services = () => {
         <div className="service_title__container">
           <h2 className="service__header grid">
             <span id="serv-title-one">How I can help</span>
-            <span id="serv-title-two">Services</span> 
+            <span id="serv-title-two">Services</span>
           </h2>
         </div>
 
@@ -36,7 +34,7 @@ export const Services = () => {
             </h3>
             <p className="service__content">
               Depression is a feeling of being trapped by life's baggage and
-              paralyzed by negative emotions. 
+              paralyzed by negative emotions.
               <br />
               <br />
               Imagine discarding that old baggage and replace it with joy and
@@ -47,7 +45,7 @@ export const Services = () => {
           <div className="service">
             <h3 className="service__subtitle">Release trauma & PTSD</h3>
             <p className="service__content">
-              Horrible things happen and in one moment life changes. 
+              Horrible things happen and in one moment life changes.
               <br />
               <br />
               Imagine re-claiming your life and no longer being triggered and
@@ -61,9 +59,9 @@ export const Services = () => {
             </h3>
             <p className="service__content">
               You want to achieve more, but old unproductive habits and thinking
-              are getting in the way. 
+              are getting in the way.
               <br />
-              <br /> 
+              <br />
               Align your desires, channel your abilities and become that
               successful person you wish to be.
             </p>
@@ -73,7 +71,7 @@ export const Services = () => {
             <h3 className="service__subtitle">Achieve wellness</h3>
             <p className="service__content">
               Reclaim your health and happiness by releasing the negative energy
-              that is draining your physical resources. 
+              that is draining your physical resources.
               <br />
               <br />
               Imagine achieving the health and wellness you seek.{" "}
@@ -84,7 +82,7 @@ export const Services = () => {
             <h3 className="service__subtitle">Let go of fear & phobias</h3>
             <p className="service__content">
               Fear and phobias may be illogical, but they sure have an impact on
-              our lives. 
+              our lives.
               <br />
               <br />
               Re-train your automatic response to triggers, so you are able to
@@ -93,7 +91,6 @@ export const Services = () => {
           </div>
         </div>
       </div>
-
     </section>
   );
 };

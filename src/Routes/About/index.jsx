@@ -1,11 +1,8 @@
-import React, { useRef } from "react";
+import React from "react";
 import "./About.css";
 import { useNav } from "../../Hooks/useNav";
-import { NextPageButton } from "../../Components/NextPageButton";
-
 
 export const About = () => {
-
   const aboutRef = useNav("about");
 
   return (
@@ -48,7 +45,6 @@ export const About = () => {
           </p>
         </div>
       </div>
-
     </section>
   );
 };

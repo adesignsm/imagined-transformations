@@ -1,4 +1,4 @@
-import React, { useContext, useEffect, useRef } from 'react';
+import { useContext, useEffect, useRef } from 'react';
 import { useOnScreen } from "./useOnScreen";
 import { NavContext } from "../Context/NavContext";
 
