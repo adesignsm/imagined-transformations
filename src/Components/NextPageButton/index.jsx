@@ -11,17 +11,14 @@ export const NextPageButton = () => {
 
   //Displays next page button after 5 seconds. Also, button will disappear when it hits contact page
   setTimeout(() => {
-    /*
-    window.addEventListener("scroll", function () {
-      const scrollRight = document.querySelector(".next-page-button");
-      //when scroll is farther than 6000 width, the 'Next Page Button' will disappear
-      if (this.scrollX < 6000 )
-        scrollRight.classList.add("show_button__container");
-      else scrollRight.classList.remove("show_button__container");
-    });
-*/
     setShow(true);
-  }, 5000);
+
+    if (activeLinkId === "contact") {
+      document.getElementById("right").style.webkitTransform = "rotate(180deg)";
+    } else {
+      document.getElementById("right").style.webkitTransform = "rotate(360deg)";
+    }
+  }, 1000);
 
   //click handler for 'Next Page Button', will scroll to next page and resets in the contact section
   const handleNextPage = () => {

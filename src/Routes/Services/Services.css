@@ -9,17 +9,10 @@
 
 .service__header {
   font-size: 7.5rem;
-  /*
-    grid-template-columns: 2fr 1fr;
-    display: flex;
-    justify-content: start;
-    align-items: center;
-    */
 }
 
 #serv-title-two {
   font-size: 1.5rem;
-  /*padding-left: 2rem;*/
 }
 
 .service__section {
@@ -29,7 +22,7 @@
 }
 
 .service {
-  padding: 1.3rem;
+  padding: 3rem;
   background-color: rgba(217, 217, 217, 0.5);
   backdrop-filter: blur(50px);
   border-radius: 15px;
@@ -46,6 +39,7 @@
 .service__content {
   font-size: 1.06rem;
   line-height: 18px;
+  font-weight: bold;
 }
 
 @media screen and (max-width: 1201px) {
@@ -74,9 +68,6 @@
     max-height: 100%;
   }
 
-  .service_title__container {
-  }
-
   .service__header {
     font-size: 2.6rem;
     display: flex;
@@ -84,16 +75,17 @@
     align-items: start;
   }
 
-  .service__header span {
-  }
-
   .service__header {
     font-size: 2.6rem;
     display: flex;
   }
 
+  .service_title__container .service__header span {
+    text-align: center;
+  }
+
   #serv-title-two {
-    font-size: 1.5rem;
+    font-size: 1rem;
     padding-left: 0;
   }
 

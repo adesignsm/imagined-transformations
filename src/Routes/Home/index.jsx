@@ -11,7 +11,7 @@ export const Home = () => {
       <div className="home__container container grid">
         <div className="home_title__container">
           <h2 className="home__header grid">
-            <span id="home-title-first">Imagine</span>
+            <span id="home-title-first">Imagined</span>
             <span id="home-title-second">calm, confidence, & clarity</span>
             <span id="home-title-third">Transformations</span>
           </h2>

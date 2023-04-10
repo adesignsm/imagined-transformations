@@ -10,6 +10,7 @@
   border: 3px solid var(--primary-txt);
   border-radius: 50%;
   color: #fff;
+  font-family: var(--gloock-font);
 }
 
 .uil-arrow-right {

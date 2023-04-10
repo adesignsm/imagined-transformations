@@ -3,23 +3,12 @@
   height: 100vh;
 }
 
-.test_title__container {
-  /*width: 70%;*/
-}
-
 .testimonial__header {
   font-style: normal;
   font-weight: 400;
   font-size: 7.5rem;
   line-height: 145px;
 }
-/*
-#test-title-two {
-    font-size: 1.5rem;
-    position: relative;
-    left: 9rem;
-    top: -1rem;
-}*/
 
 #test-title-two {
   font-size: 1.5rem;
@@ -30,11 +19,6 @@
 
 .testimonials__container {
   justify-content: space-between;
-  /*
-    display: grid;
-    grid-template-columns: repeat(3, 32%);
-    column-gap: 1rem;
-    */
 }
 
 .testimonial {
@@ -46,6 +30,7 @@
 .testimonial__content {
   padding: 2rem 2rem;
   aspect-ratio: 2/1;
+  font-weight: bold;
 }
 
 .clients {
@@ -97,6 +82,7 @@
 
   .test_title__container {
     width: 100%;
+    text-align: center;
   }
 
   .testimonial__header {

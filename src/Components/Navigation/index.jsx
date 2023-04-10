@@ -7,6 +7,16 @@ export const Navigation = () => {
   const { activeLinkId } = useContext(NavContext);
   console.log(activeLinkId);
 
+  window.onscroll = () => {
+    if (window.innerWidth <= 690) {
+      if (activeLinkId === "contact") {
+        document.getElementById("down").style.webkitTransform = "rotate(180deg)";
+      } else {
+        document.getElementById("down").style.webkitTransform = "rotate(-360deg)";
+      }
+    }
+  }
+
   //organizing links with an array which can later be mapped out
   const Links = ["home", "about", "testimonials", "services", "contact"];
 
