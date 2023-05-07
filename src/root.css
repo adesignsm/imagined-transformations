@@ -283,10 +283,10 @@ gap: 1.5rem;
 
   .section {
     height: 100%;
-    padding: 4rem 0 5rem;
+    padding: 4rem 0 4rem;
   }
 
   .section:not(:first-child) {
-    padding: 2rem 0;
+    padding-top: 2rem;
   }
 }

@@ -1,0 +1,23 @@
+.slider {
+  position: relative;
+  padding: 2rem; 
+}
+
+.image {
+  width: 100%;
+  height: auto;
+  aspect-ratio: 1/1;
+  object-fit: contain;
+}
+
+.slide {
+  opacity: 0;
+  transition-duration: 5s ease-in-out;
+  object-fit: contain;
+
+}
+
+.slide.active {
+  opacity: 1;
+  transition-duration: 3s;
+}

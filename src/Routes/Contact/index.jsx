@@ -58,7 +58,7 @@ export const Contact = () => {
           <form>
             <div className="contact__content">
               <label className="label__title" htmlFor="name">
-                Name: *{" "}
+                Name:*{" "}
               </label>
               <input
                 type="text"
@@ -70,7 +70,7 @@ export const Contact = () => {
 
             <div className="contact__content">
               <label className="label__title" htmlFor="email">
-                Email: *{" "}
+                Email:*{" "}
               </label>
               <input
                 type="email"
@@ -93,14 +93,14 @@ export const Contact = () => {
 
             <div className="contact__content">
               <label className="label__title" htmlFor="subject">
-                Subject: *{" "}
+                Subject:{" "}
               </label>
-              <input type="text" id="subject" placeholder="Type the subject" required />
+              <input type="text" id="subject" placeholder="Type the subject" />
             </div>
 
             <div className="contact__content">
               <label className="label__title" htmlFor="message">
-                Message: *{" "}
+                Message:{" "}
               </label>
               <textarea
                 name="message"
@@ -111,7 +111,7 @@ export const Contact = () => {
               ></textarea>
             </div>
             {/*Made submit button but not sure where to send afterwards */}
-            <button className="contact__submit" type="submit">Submit</button>
+            <button type="submit">Submit</button>
           </form>
         </div>
       </div>
