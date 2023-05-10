@@ -46,7 +46,7 @@
     color: #fff;
     margin-bottom: 1rem;
     justify-items: end;
-    border-bottom: 0.2rem solid var(--primary-txt);
+    border-bottom: none;
   }
   .uil-envelope {
     color: #fff;
@@ -62,6 +62,5 @@
   }
   .mobile__message {
     font-size: 2rem;
-    border-bottom: none;
   }
 }

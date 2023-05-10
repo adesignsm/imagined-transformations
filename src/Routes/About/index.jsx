@@ -43,7 +43,7 @@ export const About = () => {
             </p>
             <p>
               I work with my clients over a span of three months and sessions
-              are conducted via video call or in person
+              are conducted via video call or in person.
             </p>
           </div>
         </div>

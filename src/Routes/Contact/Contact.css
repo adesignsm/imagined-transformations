@@ -118,9 +118,17 @@ textarea::placeholder {
     font-family: var(--gloock-font);
     height: 100%;
     justify-content: space-between;
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
   }
   .contact__title {
     font-size: 5rem;
+    padding-bottom: 1rem;
+  }
+
+  .title__content {
+    padding-bottom: 3rem;
   }
 
   .contact__title__container {
