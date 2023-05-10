@@ -10,12 +10,12 @@
 
 .slide {
   opacity: 0;
-  transition-duration: 5s ease-in-out;
+  transition-duration: 5s ease;
 }
 
 .slide.active {
   opacity: 1;
-  transition-duration: 3s;
+  transition-duration: 5s;
 }
 
 @media screen and (max-width: 1201px) {
