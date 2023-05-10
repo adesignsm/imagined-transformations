@@ -9,7 +9,7 @@ export const About = () => {
 
   return (
     <section ref={aboutRef} className="about section" id="about">
-      <div className="about__container container flex">
+      <div className="about__container container">
         <div className="about_content__container">
           <div className="about_title__container">
             <h2 className="about__header">
