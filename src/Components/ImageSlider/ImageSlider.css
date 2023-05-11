@@ -5,7 +5,8 @@
 }
 
 .image {
-  width: 100%;
+  max-width: 90%;
+  height: auto;
 }
 
 .slide {
@@ -19,6 +20,10 @@
 }
 
 @media screen and (max-width: 1201px) {
+  .image {
+    max-width: 100%;
+    height: auto;
+  }
 }
 @media screen and (max-width: 992px) {
 

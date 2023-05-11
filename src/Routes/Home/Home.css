@@ -4,27 +4,31 @@
 }
 
 .home__header {
-  max-width: 80%;
+  max-width: 100%;
   font-style: normal;
   font-weight: 400;
-  font-size: 7.5rem;
-  line-height: 145px;
-  grid-template-columns: 31.25rem 2fr;
-  padding-bottom: 1rem;
+  font-size: 7rem;
+  line-height: normal;
+  display: flex;
+  flex-wrap: wrap;  
 }
 
 #home-title-second {
   font-size: 1.5rem;
-  margin-left: 7rem;
+  display: flex;
+  flex-direction: center;
+  align-items: center;
+  padding-bottom: 1rem;
 }
 
 .home__name {
-  padding: 0 0 3rem 0;
+  padding-bottom: 1rem;
+  font-weight: bold;
 }
 
 .home__content {
   justify-content: space-between;
-  line-height: 30px;
+  line-height: normal;
   font-weight: bold;
 }
 
@@ -36,8 +40,9 @@
 @media screen and (max-width: 1201px) {
   .home__header {
     grid-template-columns: 1fr;
-    font-size: 6.5rem;
-    line-height: 70px;
+    font-size: 5rem;
+    line-height: normal;
+    display: grid;
   }
 
   #home-title-second {
@@ -47,7 +52,7 @@
   }
 
   .home__name {
-    padding: 0 0 3rem 0;
+    padding: 0 0 1rem 0;
   }
 }
 

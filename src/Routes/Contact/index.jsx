@@ -111,7 +111,7 @@ export const Contact = () => {
               ></textarea>
             </div>
             {/*Made submit button but not sure where to send afterwards */}
-            <button type="submit">Submit</button>
+            <button className="form__button" type="submit">Submit</button>
           </form>
         </div>
       </div>

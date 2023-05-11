@@ -7,9 +7,9 @@ export const Services = () => {
 
   return (
     <section ref={servicesRef} className="services section" id="services">
-      <div className="services__container container grid">
+      <div className="services__container container">
         <div className="service_title__container">
-          <h2 className="service__header grid">
+          <h2 className="service__header">
             <span id="serv-title-one">How I can help</span>
             <span id="serv-title-two">Services</span>
           </h2>

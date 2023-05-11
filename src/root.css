@@ -201,6 +201,9 @@ box-sizing: border-box;
     color: #000;
   }
 
+  p{
+    font-size: 1rem;
+  }
   .section {
     /*
   width: 100%;
@@ -221,6 +224,31 @@ margin: 0 auto;
 display: grid;
 gap: 1.5rem;
 */
+  }
+/*
+  ========================================
+4. Layout
+======================================== */
+
+  .section {
+    width: 100vw;
+    height: 100vh;
+    padding: 8rem 0 2rem;
+  }
+
+  .container {
+    max-width: 90%;
+    margin: 0 auto;
+  }
+
+  .grid {
+    display: grid;
+    gap: 1.5rem;
+  }
+
+  .flex {
+    display: flex;
+    flex-wrap: wrap;
   }
 }
 
