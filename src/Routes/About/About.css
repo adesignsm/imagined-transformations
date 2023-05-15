@@ -78,9 +78,6 @@
     flex-direction: column;
   }
 
-  .image__container {
-    max-width: 100%;
-  }
 
   .about__content p {
     width: 100%;
@@ -89,6 +86,7 @@
   }
   .image__container {
     max-width: 50%;
+    height: auto;
   }
 }
 
@@ -155,6 +153,7 @@
   @media screen and (max-width: 480px) {
     .image__container {
       max-width: 100%;
+      width: 100%;
     }
   }
 }
