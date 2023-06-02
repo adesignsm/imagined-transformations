@@ -45,7 +45,7 @@ export const Contact = () => {
     <section ref={contactRef} className="contact section" id="contact">
       <div className="contact__container container flex">
         {/*TITLE CONTAINER*/}
-        <div className="contact__title__container">
+        <div className="contact__title__container flex">
           <h2 className="contact__title">Contact</h2>
           <p className="title__content">
             Get in touch today to book your 30 minute free consultation. Learn

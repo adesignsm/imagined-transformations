@@ -11,6 +11,7 @@
 
 .contact__title__container {
   max-width: 45%;
+  flex-direction: column;
 }
 
 .title__content {
@@ -20,9 +21,8 @@
 }
 
 .contact__title {
-  font-size: 6rem;
-  display: flex;
-  flex-direction: column;
+  font-size: 5rem;
+  padding-bottom: .8rem;
 }
 
 .contact__form {
@@ -112,7 +112,7 @@ textarea::placeholder {
 /*Large  Screens and Devices (e.g.:DESKTOPS)*/
 @media screen and (max-width: 1201px) {
   .contact__title {
-    font-size: 5rem;
+    font-size: 4rem;
   }
 
   .title__content {
@@ -145,38 +145,28 @@ textarea::placeholder {
     flex-wrap: nowrap;
     flex-direction: column;
   }
-  .contact__title {
-    font-size: 5rem;
-    padding-bottom: 1rem;
-  }
-
-  .title__content {
-    padding-bottom: 3rem;
-  }
 
   .contact__title__container {
-    width: 100%;
+    max-width: 100%;
   }
 
   .contact__form {
     max-width: 100%;
     width: 100%;
-    padding: 2rem 4rem;
+    padding: 2rem 3rem;
   }
 }
 
 /*Small Screens and Devices (e.g.:MOBILE)*/
 @media screen and (max-width: 480px) {
   .contact__container {
-    padding: 1rem 0;
     display: flex;
     flex-direction: column;
   }
 
   .contact__title__container {
-    max-width: 100%;
     padding-bottom: 1.5rem;
-    text-align: center;
+    text-align: left;
   }
 
   .title__content {
@@ -189,13 +179,12 @@ textarea::placeholder {
     font-size: 2.6rem;
     display: flex;
     flex-direction: column;
-    margin-bottom: 1rem;
   }
 
   .contact__form {
     max-width: 100%;
     border-radius: 15px;
-    padding: 1rem 2rem;
+    padding: 1rem;
   }
 
   .contact__content {

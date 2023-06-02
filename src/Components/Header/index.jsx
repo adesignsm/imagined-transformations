@@ -13,7 +13,7 @@ export const Header = () => {
       {/*Envelope will display from 480px and lower (mobile)*/}
       <div className="mobile__message">
         <a href="#contact">
-          <i class="uil uil-envelope"></i>
+          <i className="uil uil-envelope"></i>
         </a>
       </div>
     </section>
