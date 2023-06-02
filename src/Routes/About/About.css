@@ -142,6 +142,7 @@
   .image__container {
     max-width: 100%;
     height: auto;
+    padding-bottom: 3rem;
   }
 
   .about__content p {
@@ -154,6 +155,10 @@
     .image__container {
       max-width: 100%;
       width: 100%;
+    }
+
+    .about__header {
+      font-size: 2.6rem;
     }
   }
 }

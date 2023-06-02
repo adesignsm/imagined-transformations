@@ -13,7 +13,7 @@ export const Testimonials = () => {
     >
       <div className="testimonials__section container grid">
         <div className="test_title__container">
-          <h2 className="testimonial__header">
+          <h2 className="testimonial__header flex">
             <span id="test-title-one">What People are Saying</span>
             <span id="test-title-two">Testimonials</span>
           </h2>

@@ -51,7 +51,7 @@ export const NextPageButton = () => {
           className="btn btn-primary next-page-button show_button__container"
         >
           {" "}
-          <i class="uil uil-arrow-right" />
+          <i className="uil uil-arrow-right" />
         </button>
       )}
 
@@ -63,7 +63,7 @@ export const NextPageButton = () => {
           className="btn btn-primary next-page-button show_button__container"
         >
           {" "}
-          <i class="uil uil-arrow-down" />
+          <i className="uil uil-arrow-down" />
         </button>
       )}
     </>

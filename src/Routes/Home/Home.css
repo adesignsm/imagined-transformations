@@ -3,6 +3,10 @@
   height: 100vh;
 }
 
+.home_title__container {
+  width: 100%;
+}
+
 .home__header {
   max-width: 70%;
   font-style: normal;
@@ -22,7 +26,6 @@
 }
 
 .home__name {
-  padding-bottom: 1rem;
   font-weight: bold;
 }
 
@@ -58,7 +61,7 @@
 
 @media screen and (max-width: 768px) {
   .home__header {
-    font-size: 5rem;
+    font-size: 3.8rem;
   }
 
   .home__quote {
@@ -72,21 +75,15 @@
 
 /*Small Screens and Devices (e.g.:MOBILE)*/
 @media screen and (max-width: 480px) {
+  .home {
+    height: 100%;
+  }
+
   .home__header {
     font-size: 2.6rem;
-    line-height: 3px;
   }
   
   #home-title-second {
     font-size: 1rem;
   }
-
-  .home__header span {
-    padding: 0.7rem 0;
-  }
-
-  .home__name {
-    padding: 0 0 1rem 0;
-  }
-
 }
