@@ -76,8 +76,14 @@
     width: 102%;
   }
 
-  .logo-container img {
-    transform: scale(0.6);
+  .logo-container .logo-part-1 {
+    margin-top: 0.6rem;
+    margin-left: 0.6rem;
+    width: 4rem;
+  }
+
+  .logo-container .logo-part-2 {
+    width: 1.5rem;
   }
 }
 
@@ -109,6 +115,10 @@
     justify-content: flex-start;
     margin-left: -1rem;
   }
+
+  .logo-container img {
+    transform: scale(0.6);
+  }
 }
 
 /*Small Screens and Devices (e.g.:MOBILE)*/
@@ -120,5 +130,25 @@
   }
   .mobile__message {
     font-size: 2rem;
+  }
+
+  .logo-container {
+    margin-top: -1rem;
+  }
+
+  .logo-container .logo-part-1 {
+    width: 3.5rem;
+    margin-top: 1rem;
+    margin-left: 1rem;
+  }
+
+  .logo-container .logo-part-2 {
+    width: 2.3rem;
+    margin-top: 1.6rem;
+    margin-left: 1.6rem;
+  }
+
+  .logo-container img {
+    transform: scale(0.6);
   }
 }
