@@ -22,6 +22,43 @@
   display: none;
 }
 
+.logo-container {
+  position: relative;
+  display: flex;
+  float: left;
+  justify-content: space-between;
+  width: 90vw;
+  margin-top: -0.5rem;
+}
+
+.logo-container img {
+  position: absolute;
+}
+
+.logo-container .logo-part-1 {
+  width: 6rem;
+}
+
+.logo-container .logo-part-2 {
+  width: 2.2rem;
+  margin-top: 1.85rem;
+  margin-left: 1.85rem; 
+}
+
+.logo-part-1 {
+  animation: rotate 15s infinite linear; /* Adjust the animation duration and timing function as needed */
+}
+
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+
 @media screen and (max-width: 1200px) {
   .header {
     position: fixed;
@@ -31,6 +68,16 @@
     max-width: 15rem;
     color: var(--primary-txt);
     font-size: 1rem;
+  }
+
+  .logo-container {
+    margin-top: -1.5rem;
+    justify-content: flex-start;
+    width: 102%;
+  }
+
+  .logo-container img {
+    transform: scale(0.6);
   }
 }
 
@@ -56,6 +103,11 @@
   }
   .uil-envelope {
     color: #fff;
+  }
+
+  .logo-container {
+    justify-content: flex-start;
+    margin-left: -1rem;
   }
 }
 

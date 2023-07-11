@@ -16,7 +16,7 @@
 1. Variable CSS Styles
 ======================================== */
 :root {
-  --primary-background: #0022ee;
+  --primary-background: #7185F9;
   --secondary-background: ;
 
   /*FONTS*/
@@ -65,7 +65,7 @@ h6 {
 
 html {
   scroll-behavior: smooth;
-  background-color: #0022ee;
+  background-color: var(--primary-background);
   box-sizing: border-box;
 }
 
@@ -155,7 +155,7 @@ box-sizing: border-box;
 
   html {
     scroll-behavior: smooth;
-    background-color: #0022ee;
+    background-color: var(--primary-background);
   }
 
   /*
