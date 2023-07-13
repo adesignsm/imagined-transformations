@@ -29,6 +29,7 @@
   justify-content: space-between;
   width: 90vw;
   margin-top: -0.5rem;
+  
 }
 
 .logo-container img {
@@ -46,7 +47,11 @@
 }
 
 .logo-part-1 {
-  animation: rotate 15s infinite linear; /* Adjust the animation duration and timing function as needed */
+  animation: rotate 15s infinite linear;
+}
+
+.logo-part-2 {
+  animation: pulsate 5s infinite linear;
 }
 
 @keyframes rotate {
@@ -55,6 +60,18 @@
   }
   to {
     transform: rotate(360deg);
+  }
+}
+
+@keyframes pulsate {
+  0% {
+    transform: scale(1.2);
+  }
+  50% {
+    transform: scale(0.8);
+  }
+  100% {
+    transform: scale(1.2);
   }
 }
 
@@ -150,5 +167,17 @@
 
   .logo-container img {
     transform: scale(0.6);
+  }
+
+  @keyframes pulsate {
+    0% {
+      transform: scale(0.7);
+    }
+    50% {
+      transform: scale(0.4);
+    }
+    100% {
+      transform: scale(0.7);
+    }
   }
 }
