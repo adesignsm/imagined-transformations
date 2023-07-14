@@ -20,7 +20,7 @@
   --secondary-background: ;
 
   /*FONTS*/
-  --primary-txt: #ffffff;
+  --primary-txt: #F8F8F8;
   --secondary-txt: ;
 
   --intern-font: "Inter", sans-serif;
@@ -39,7 +39,7 @@ p {
   font-family: "Inter", sans-serif;
   color: var(--primary-txt);
   font-size: var(--normal-text);
-  line-height: 30px;
+  line-height: 100%;
 }
 
 h1,
@@ -70,8 +70,7 @@ html {
 }
 
 body {
-  overflow-y: scroll;
-  overflow-x: scroll;
+  overflow: hidden;
 }
 
 main {

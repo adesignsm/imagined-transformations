@@ -18,7 +18,7 @@
 }
 
 #home-title-second {
-  font-size: 1.5rem;
+  font-size: 2rem;
   display: flex;
   flex-direction: center;
   align-items: center;
@@ -31,13 +31,13 @@
 
 .home__content {
   justify-content: space-between;
-  line-height: normal;
+  line-height: 100px;
   font-weight: bold;
 }
 
 .home__quote {
   width: 32%;
-  font-size: 1.2rem;
+  font-size: 2rem;
 }
 
 @media screen and (max-width: 1201px) {

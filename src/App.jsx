@@ -1,9 +1,11 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
+import $ from "jquery";
 import "./root.css";
 
 import { Header } from "./Components/Header";
 import { Navigation } from "./Components/Navigation";
 import { Background } from "./Components/Background";
+import Entry from "./Components/Entry";
 
 import { Home } from "./Routes/Home";
 import { About } from "./Routes/About";
@@ -14,13 +16,19 @@ import { NextPageButton } from "./Components/NextPageButton";
 import { NavProvider } from "./Context/NavContext";
 
 const App = () => {
+  useEffect(() => {
+    setTimeout(() => {
+      $("#entry").fadeOut(1000);
+    }, 6000);
+  }, []);
+
   return (
     <div className="App">
+      <Entry />
       <NavProvider>
         <Header />
         <Navigation />
 
-        {/*ROUTES*/}
         <main className="main">
           <Home />
           <About />

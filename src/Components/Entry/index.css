@@ -1,0 +1,31 @@
+#entry {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 99;
+    background-color: var(--primary-background);
+}
+
+#logo {
+    width: 35%;
+    transform: scale(0);
+    opacity: 0;
+}
+
+@media screen and (max-width: 768px) {
+    #logo {
+        width: 75%;
+    }
+}
+  
+  /*Small Screens and Devices (e.g.:MOBILE)*/
+@media screen and (max-width: 480px) {
+    #logo {
+        width: 75%;
+    }
+}
