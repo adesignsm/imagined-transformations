@@ -1,11 +1,29 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
+import sanityClient from "../../client";
 import "./About.css";
 import { useNav } from "../../Hooks/useNav";
 import ImageSlider from "../../Components/ImageSlider";
 import { photos } from "../../Components/ImageSlider/photos";
 
 export const About = () => {
+  const [paragraphs, setParagraphs] = useState({});
   const aboutRef = useNav("about");
+
+  const fetchData = async () => {
+    try {
+      const query = `*[_type == 'about-copy'][0]{
+        about_paragraphs
+      }`;
+      const result = await sanityClient.fetch(query);
+      setParagraphs(result);
+    } catch (error) {
+      console.error(error);
+    }
+  };
+
+  useEffect(() => {
+    fetchData();
+  }, []);
 
   return (
     <section ref={aboutRef} className="about section" id="about">
@@ -16,34 +34,51 @@ export const About = () => {
               Achieve Significant Change
             </h2>
             <h3 className="sub__header">
-              Imagine becoming the person you desire to be
+              {Object.keys(paragraphs).length > 0 && paragraphs.about_paragraphs.map((paragraph) => {
+                if (paragraph.title === "Heading") {
+                  return (
+                    paragraph.content
+                  )
+                }
+              })}
             </h3>
           </div>
           <div className="about__content flex">
             <p>
-              I will guide and coach you step by step to overcome past
-              experiences, fears, or thoughts that overwhelm you and limits your
-              future opportunities. Achieving lasting results in only a few
-              weeks, not years, with some fears and phobias released in just a
-              few hours. Unlike other forms of therapy, my approach will not
-              require you to relive the past or even share the details of those
-              events
+              {Object.keys(paragraphs).length > 0 && paragraphs.about_paragraphs.map((paragraph) => {
+                if (paragraph.title === "Introduction") {
+                  return (
+                    paragraph.content
+                  )
+                }
+              })}
             </p>
             <p>
-              The techniques I use are profoundly effective and gentle. I see my
-              clients release the pain of their past experiences and negative
-              thoughts and watch as a sense of calm washes over them.
-              Life-altering changes happen quickly and permanently!
+              {Object.keys(paragraphs).length > 0 && paragraphs.about_paragraphs.map((paragraph) => {
+                if (paragraph.title === "Body 1") {
+                  return (
+                    paragraph.content
+                  )
+                }
+              })}
             </p>
             <p>
-              I am a certified Master Neuro Linguistic Programming Practitioner,
-              with a certification in Time Line Therapy®, as well as a
-              practitioner of hypnotherapy. In addition, I am certified as a
-              core transformation and wholeness coach.
+              {Object.keys(paragraphs).length > 0 && paragraphs.about_paragraphs.map((paragraph) => {
+                if (paragraph.title === "Body 2") {
+                  return (
+                    paragraph.content
+                  )
+                }
+              })}
             </p>
             <p>
-              I work with my clients over a span of three months and sessions
-              are conducted via video call or in person.
+              {Object.keys(paragraphs).length > 0 && paragraphs.about_paragraphs.map((paragraph) => {
+                if (paragraph.title === "Conclusion") {
+                  return (
+                    paragraph.content
+                  )
+                }
+              })}
             </p>
           </div>
         </div>

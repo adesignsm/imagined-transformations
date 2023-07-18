@@ -1,10 +1,30 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
+import sanityClient from "../../client";
 import "./Home.css";
 
 import { useNav } from "../../Hooks/useNav";
 
 export const Home = () => {
+  const [paragraphs, setParagraphs] = useState({});
   const homeRef = useNav("home");
+
+  const fetchData = async () => {
+    try {
+      const query = `*[_type == 'home-intro-copy'][0]{
+        paragraph_1,
+        paragraph_2,
+        paragraph_3
+      }`;
+      const result = await sanityClient.fetch(query);
+      setParagraphs(result);
+    } catch (error) {
+      console.error(error);
+    }
+  };
+
+  useEffect(() => {
+    fetchData();
+  }, []);
 
   return (
     <section ref={homeRef} className="home section" id="home">
@@ -18,17 +38,9 @@ export const Home = () => {
         </div>
         <p className="home__name">Catherine Davies</p>
         <div className="home__content flex">
-          <p className="home__quote">
-            Imagined Transformations is here to help you, step by step, to
-            achieve the best version of yourself.
-          </p>
-          <p className="home__quote">
-            Find your new empowered self and eliminate the negative thoughts and
-            feelings that hold you back.
-          </p>
-          <p className="home__quote">
-            With my help you achieve more than ever before.
-          </p>
+          <p className="home__quote">{paragraphs.paragraph_1}</p>
+          <p className="home__quote">{paragraphs.paragraph_2}</p>
+          <p className="home__quote">{paragraphs.paragraph_3}</p>
         </div>
       </div>
     </section>

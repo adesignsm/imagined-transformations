@@ -1,9 +1,33 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
+import sanityClient from "../../client";
+
 import "./Contact.css";
 import { useNav } from "../../Hooks/useNav";
 
 export const Contact = () => {
+  const [contactData, setContactData] = useState({});
   const contactRef = useNav("contact");
+
+  const fetchData = async () => {
+    try {
+      const query = `*[_type == 'contact-copy'][0]{
+        paragraph_1,
+        paragraph_2,
+        email_contact,
+        secondary_email_contact
+      }`;
+      const result = await sanityClient.fetch(query);
+      setContactData(result);
+    } catch (error) {
+      console.error(error);
+    }
+  };
+
+  console.log(contactData)
+
+  useEffect(() => {
+    fetchData();
+  }, []);
 
   return (
     <section ref={contactRef} className="contact section" id="contact">
@@ -12,14 +36,13 @@ export const Contact = () => {
         <div className="contact__title__container flex">
           <h2 className="contact__title">Contact</h2>
           <p className="title__content">
-            Get in touch today to book your 30 minute free consultation. Learn
-            more about how I can help you get unstuck.
+            {Object.keys(contactData).length > 0 && contactData.paragraph_1}
             <br/>
             <br />
-            Heads up! If the contact form does not work for you, please click this button to send Catherine a message.
+            {Object.keys(contactData).length > 0 && contactData.paragraph_2}
           </p>
           <button className="secondary-contact__button">
-            <a href="mailto:catherinedavies@imaginedtransformations.com">
+            <a href={Object.keys(contactData).length > 0 ? `mailto:${contactData.email_contact}` : `mailto:${contactData.secondary_email_contact}`}>
               Send Catherine a Message
             </a>
           </button>
