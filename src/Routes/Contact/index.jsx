@@ -23,8 +23,6 @@ export const Contact = () => {
     }
   };
 
-  console.log(contactData)
-
   useEffect(() => {
     fetchData();
   }, []);

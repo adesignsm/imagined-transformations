@@ -1,22 +1,16 @@
 export default {
-    name: 'home-intro-copy',
+    name: 'home-page',
     type: 'document',
-    title: 'Home Page Copy Content',
+    title: 'Home Page Content',
     fields: [
       {
-        name: 'paragraph_1',
+        name: 'home_paragraph',
         type: 'text',
-        title: 'Pargraph 1'
+        title: 'Home Paragraph'
       },
       {
-        name: 'paragraph_2',
-        type: 'text',
-        title: 'Pargraph 2'
-      },
-      {
-        name: 'paragraph_3',
-        type: 'text',
-        title: 'Pargraph 3'
+        name: 'home_image',
+        type: 'image'
       }
     ]
   }
