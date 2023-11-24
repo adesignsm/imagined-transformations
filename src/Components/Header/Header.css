@@ -18,6 +18,10 @@
   margin-bottom: 2rem;
 }
 
+.contact-link .contact__link {
+  line-height: 30px;
+}
+
 .mobile__message {
   display: none;
 }
