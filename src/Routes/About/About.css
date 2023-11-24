@@ -41,9 +41,10 @@
 
 .about__content p {
   width: 100%;
-  line-height: normal;
+  line-height: 25px;
   font-size: 1.2em;
   padding-bottom: 2rem;
+  font-weight: normal;
 }
 
 @media screen and (max-width: 1401px) {
