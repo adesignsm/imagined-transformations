@@ -3,7 +3,6 @@ import sanityClient from "../../client";
 import "./About.css";
 import { useNav } from "../../Hooks/useNav";
 import ImageSlider from "../../Components/ImageSlider";
-import { photos } from "../../Components/ImageSlider/photos";
 
 export const About = () => {
   const [paragraphs, setParagraphs] = useState({});
@@ -12,9 +11,10 @@ export const About = () => {
   const fetchData = async () => {
     try {
       const query = `*[_type == 'about-copy'][0]{
-        about_paragraphs
+        about_paragraphs,
       }`;
       const result = await sanityClient.fetch(query);
+      console.log(result.slider_images);
       setParagraphs(result);
     } catch (error) {
       console.error(error);
@@ -83,7 +83,7 @@ export const About = () => {
           </div>
         </div>
         <div className="image__container">
-          <ImageSlider slides={photos} />
+          <ImageSlider />
         </div>
       </div>
     </section>

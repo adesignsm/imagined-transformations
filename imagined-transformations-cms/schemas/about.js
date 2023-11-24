@@ -16,6 +16,19 @@ export default {
               ]
             }
           ]
+        },
+        {
+          name: 'slider_images',
+          type: 'array',
+          title: 'About Slider Images',
+          of: [
+            {
+              type: 'object',
+              fields: [
+                { name: 'slider_image', type: 'image', title: 'Slider Image'}
+              ]
+            }
+          ]
         }
       ]
   }

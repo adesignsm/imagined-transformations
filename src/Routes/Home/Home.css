@@ -53,9 +53,14 @@
   width: 50%;
 }
 
+.home__column-two .home__image {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+
 .home__column-two img {
-  float: right;
-  width: 70%;
+  width: 60%;
   border-radius: 10px;
 }
 
