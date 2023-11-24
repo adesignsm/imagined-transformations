@@ -1,22 +1,30 @@
 import React, { useEffect, useState } from "react";
 import sanityClient from "../../client";
+import ImageUrlBuilder from "@sanity/image-url";
 import "./Home.css";
 
 import { useNav } from "../../Hooks/useNav";
 
 export const Home = () => {
-  const [paragraphs, setParagraphs] = useState({});
+  const [paragraph, setParagraph] = useState('');
+  const [image, setImage] = useState('');
   const homeRef = useNav("home");
+
+  const builder = ImageUrlBuilder(sanityClient);
+
+  const urlFor = (source) => {
+    return builder.image(source);
+  }
 
   const fetchData = async () => {
     try {
-      const query = `*[_type == 'home-intro-copy'][0]{
-        paragraph_1,
-        paragraph_2,
-        paragraph_3
+      const query = `*[_type == 'home-page'][0]{
+        home_paragraph,
+        home_image,
       }`;
       const result = await sanityClient.fetch(query);
-      setParagraphs(result);
+      setParagraph(result.home_paragraph);
+      setImage(result.home_image.asset._ref);
     } catch (error) {
       console.error(error);
     }
@@ -28,19 +36,22 @@ export const Home = () => {
 
   return (
     <section ref={homeRef} className="home section" id="home">
-      <div className="home__container container grid">
-        <div className="home_title__container">
-          <h2 className="home__header grid">
-            <span id="home-title-first">Imagined</span>
-            <span id="home-title-second">calm, confidence, & clarity</span>
-            <span id="home-title-third">Transformations</span>
-          </h2>
+      <div className="home__container container">
+        <div className="home__column-one">
+          <div className="home_title__container">
+            <h2 className="home__header grid">
+              <span id="home-title-first">Imagined Transformations</span>
+              <span id="home-title-second">Find calm, confidence, & clarity with Catherin Davies</span>
+            </h2>
+          </div>
+          <div className="home__content flex">
+            <p className="home__quote">{paragraph}</p>
+          </div>
         </div>
-        <p className="home__name">Catherine Davies</p>
-        <div className="home__content flex">
-          <p className="home__quote">{paragraphs.paragraph_1}</p>
-          <p className="home__quote">{paragraphs.paragraph_2}</p>
-          <p className="home__quote">{paragraphs.paragraph_3}</p>
+        <div className="home__column-two">
+          <div className="home__image">
+            {image ? <img src={urlFor(image).url()} /> : null}
+          </div>
         </div>
       </div>
     </section>

@@ -3,18 +3,21 @@
   height: 100vh;
 }
 
+.home__container {
+  display: flex;
+}
+
 .home_title__container {
   width: 100%;
 }
 
 .home__header {
-  max-width: 70%;
   font-style: normal;
   font-weight: 400;
-  font-size: 7rem;
+  font-size: 5rem;
   line-height: normal;
   display: flex;
-  flex-wrap: wrap;  
+  flex-wrap: wrap;
 }
 
 #home-title-second {
@@ -36,8 +39,24 @@
 }
 
 .home__quote {
-  width: 32%;
+  width: 100%;
   font-size: 2rem;
+}
+
+.home__column-one {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+}
+
+.home__column-two {
+  width: 50%;
+}
+
+.home__column-two img {
+  float: right;
+  width: 70%;
+  border-radius: 10px;
 }
 
 @media screen and (max-width: 1201px) {
@@ -70,6 +89,14 @@
 
   .home__quote:not(:first-child) {
     margin-top: 2rem;
+  }
+
+  .home__column-one {
+    width: 100%;
+  }
+
+  .home__column-two {
+    display: none;
   }
 }
 
