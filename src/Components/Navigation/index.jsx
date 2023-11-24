@@ -5,7 +5,6 @@ import { NavContext } from "../../Context/NavContext";
 export const Navigation = () => {
   //Will display in console where the current page is located
   const { activeLinkId } = useContext(NavContext);
-  console.log(activeLinkId);
 
   window.onscroll = () => {
     if (window.innerWidth <= 690) {

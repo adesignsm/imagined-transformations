@@ -10,6 +10,15 @@
   z-index: -1;
 }
 
+#overlay {
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  background-color: #000;
+  z-index: 1;
+  opacity: 0.2;
+}
+
 .blob-c {
   min-height: 100%;
   position: absolute;
