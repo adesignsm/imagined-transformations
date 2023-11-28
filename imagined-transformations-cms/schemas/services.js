@@ -13,7 +13,8 @@ export default {
               type: 'object',
               fields: [
                 { name: 'title', type: 'string', title: 'Name of Service' },
-                { name: 'content', type: 'text', title: 'Service Description' }
+                { name: 'content', type: 'text', title: 'Service Description' },
+                { name: 'icon', type: 'image', title: 'Service Icon', description: 'Upload an Icon to go with your service.'}
               ]
             }
           ]

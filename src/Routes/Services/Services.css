@@ -8,6 +8,10 @@
 
 }
 
+.service__icon {
+  max-width: 50%;
+}
+
 .service__header {
   font-size: 5rem;
   display: flex;
@@ -108,7 +112,7 @@
 @media screen and (max-width: 768px) {
   .service {
     width: 100%;
-    text-align: left;
+    text-align: center;
   }
 }
 
