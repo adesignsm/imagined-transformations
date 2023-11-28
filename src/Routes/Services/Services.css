@@ -19,7 +19,7 @@
 }
 
 #serv-title-two {
-  font-size: 1.5rem;
+  font-size: 0.5em;
   padding-bottom: 0.8rem;
 }
 
@@ -134,8 +134,16 @@
     display: flex;
   }
 
+  #serv-title-one {
+    text-align: center;
+    width: 100%;
+  }
+
   #serv-title-two {
-    font-size: 1rem;
+    margin-top: 1rem;
+    text-align: center;
+    width: 100%;
+    font-size: 0.8em;
     padding-left: 0;
   }
 
@@ -159,9 +167,11 @@
   .service__subtitle {
     font-size: 1.87rem;
     padding-bottom: 1rem;
+    text-align: center;
   }
 
   .service__content {
+    text-align: center;
     font-size: 1.06rem;
     line-height: 18px;
   }
