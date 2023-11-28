@@ -5,6 +5,13 @@ import ImageUrlBuilder from "@sanity/image-url";
 import "./Services.css";
 import { useNav } from "../../Hooks/useNav";
 
+import ANXIETY_ICON from '../../Assets/Icons/anxiety.png';
+import CONFIDENCE_ICON from '../../Assets/Icons/confidence.png';
+import FEAR_ICON from '../../Assets/Icons/fear.png';
+import PTSD_ICON from '../../Assets/Icons/ptsd.png';
+import SUCCESS_ICON from '../../Assets/Icons/success.png';
+import WELLNESS_ICON from '../../Assets/Icons/wellness.png';
+
 export const Services = () => {
   const [services, setServices] = useState({});
   const servicesRef = useNav("services");
@@ -43,8 +50,6 @@ export const Services = () => {
 
         <div className="service__section flex">
           {Object.keys(services).length > 0 && services.service_content.slice(0, 6).map((service) => {
-            console.log(service.icon.asset._ref);
-
             return (
               <div className="service">
                 <img className='service__icon' src={urlFor(service.icon.asset._ref).url()} />
