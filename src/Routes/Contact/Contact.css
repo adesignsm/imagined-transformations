@@ -31,7 +31,7 @@
   color: #fff;
   border: 3px solid white;
   border-radius: 5px;
-  margin-top: 1rem;
+  margin-top: 2rem;
   width: 50%;
 
   -webkit-transition: all .2s ease;
@@ -41,10 +41,10 @@
   transition: all .2s ease;
 }
 
-.secondary-contact__button:hover {
+.secondary-contact__button:hover,
+.secondary-contact__button:hover a {
   color: #7185F9;
   background-color: #fff;
-
 }
 
 .secondary-contact__button a {
@@ -53,7 +53,7 @@
 }
 
 .secondary-contact__button a:hover {
-  color: #7185F9; 
+  color: #7185F9;
 }
 
 .contact__form {
@@ -202,12 +202,12 @@ textarea::placeholder {
 
   .contact__title__container {
     padding-bottom: 1.5rem;
-    text-align: left;
+    text-align: center;
   }
 
   .title__content {
     font-family: var(--gloock-font);
-    font-size: 1rem;
+    font-size: 1.5em;
     line-height: 30px;
   }
 

@@ -30,7 +30,7 @@ export const Testimonials = () => {
         <div className="test_title__container">
           <h2 className="testimonial__header flex">
             <span id="test-title-one">What People are Saying</span>
-            <span id="test-title-two">Testimonials</span>
+            <span id="test-title-two">- Testimonials -</span>
           </h2>
         </div>
         <div className="testimonials__container flex">

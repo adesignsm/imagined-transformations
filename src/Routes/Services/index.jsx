@@ -30,7 +30,7 @@ export const Services = () => {
         <div className="service_title__container">
           <h2 className="service__header">
             <span id="serv-title-one">How I can help</span>
-            <span id="serv-title-two">Services</span>
+            <span id="serv-title-two">- Services -</span>
           </h2>
         </div>
 
