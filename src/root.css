@@ -69,17 +69,10 @@ html {
   box-sizing: border-box;
 }
 
-body {
-  overflow: hidden;
-}
-
 main {
   max-height: 100vh;
-  width: 500vw;
+  width: auto;
   height: 100vh;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
 }
 
 body,
@@ -128,7 +121,7 @@ a:hover {
 
 .section {
   width: 100vw;
-  height: 100vh;
+  height: auto;
   padding: 10rem 0 2rem;
 }
 
