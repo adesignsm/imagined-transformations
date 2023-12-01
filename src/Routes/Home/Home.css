@@ -1,6 +1,5 @@
 .home {
   max-width: 100%;
-  height: 100vh;
 }
 
 .home__container {
@@ -44,6 +43,14 @@
   line-height: 36px;
 }
 
+.home__quote.word_blurb {
+  background-color: rgba(255, 255, 255, 0.393);
+  border-radius: 100px;
+  padding: 3rem;
+  width: 50%;
+  text-align: center;
+}
+
 .home__column-one {
   display: flex;
   flex-direction: column;
@@ -52,6 +59,15 @@
 
 .home__column-two {
   width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.home__image-container {
+  margin-top: 2rem;
+  display: flex;
+  justify-content: end;
 }
 
 .home__column-two .home__image {
@@ -61,8 +77,9 @@
 }
 
 .home__column-two img {
-  width: 60%;
-  border-radius: 10px;
+  width: 35%;
+  border-radius: 100px;
+  margin-left: 2.5rem;
 }
 
 @media screen and (max-width: 1201px) {

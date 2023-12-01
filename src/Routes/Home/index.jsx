@@ -7,7 +7,11 @@ import { useNav } from "../../Hooks/useNav";
 
 export const Home = () => {
   const [paragraph, setParagraph] = useState('');
-  const [image, setImage] = useState('');
+  const [wordBlurb, setWordBlurb] = useState('');
+  const [image, setImage] = useState({
+    image1: '',
+    image2: '',
+  });
   const homeRef = useNav("home");
 
   const builder = ImageUrlBuilder(sanityClient);
@@ -20,11 +24,18 @@ export const Home = () => {
     try {
       const query = `*[_type == 'home-page'][0]{
         home_paragraph,
-        home_image,
+        home_image_one,
+        home_image_two,
+        home_word_blurb
       }`;
       const result = await sanityClient.fetch(query);
       setParagraph(result.home_paragraph);
-      setImage(result.home_image.asset._ref);
+      setImage({
+        ...image,
+        image1: result.home_image_one.asset._ref,
+        image2: result.home_image_two.asset._ref,
+      });
+      setWordBlurb(result.home_word_blurb);
     } catch (error) {
       console.error(error);
     }
@@ -49,9 +60,13 @@ export const Home = () => {
           </div>
         </div>
         <div className="home__column-two">
-          <div className="home__image">
-            {image ? <img src={urlFor(image).url()} /> : null}
-          </div>
+          <p className="home__quote word_blurb">{wordBlurb}</p>
+            {image.image1 && image.image2 && (
+              <div className="home__image-container">
+                <img src={urlFor(image.image1).url()} />
+                <img src={urlFor(image.image2).url()} />
+              </div>
+            )}
         </div>
       </div>
     </section>
