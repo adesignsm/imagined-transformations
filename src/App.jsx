@@ -12,7 +12,6 @@ import { About } from "./Routes/About";
 import { Contact } from "./Routes/Contact";
 import { Services } from "./Routes/Services";
 import { Testimonials } from "./Routes/Testimonials";
-import { NextPageButton } from "./Components/NextPageButton";
 import { NavProvider } from "./Context/NavContext";
 
 const App = () => {
@@ -38,7 +37,6 @@ const App = () => {
         </main>
 
         <Background />
-        <NextPageButton />
       </NavProvider>
     </div>
   );

@@ -14,7 +14,7 @@ export const Header = () => {
           <img className="logo-part-2"  src={LOGO_PART_2} />
         </div>
         <a className="contact-link" href="#contact">
-          <p className="contact__link">Send a message to Catherine</p>
+          <p className="contact__link">Contact Catherine for 30 minutes FREE consultation</p>
         </a>
       </div>
       {/*Envelope will display from 480px and lower (mobile)*/}
