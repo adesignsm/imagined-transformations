@@ -25,6 +25,10 @@ const Entry = () => {
         <>
             <div id="entry">
                 <img id="logo" src={LOGO} style={entrystyles}/>
+                <div id='under-construction'>
+                    <h1>Under Maintenance.</h1>
+                    <h2>Please check back later</h2>
+                </div>
             </div>
         </>
     )
