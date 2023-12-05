@@ -21,6 +21,14 @@
     #logo {
         width: 75%;
     }
+    #entry {
+        flex-direction: column;
+    }
+
+    #under-construction {
+        text-align: center;
+        margin-top: 4rem;
+    }
 }
   
   /*Small Screens and Devices (e.g.:MOBILE)*/
