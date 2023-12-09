@@ -102,8 +102,20 @@
 }
 
 @media screen and (max-width: 768px) {
+  .home {
+    margin-top: 1rem;
+  }
+
   .home__header {
     font-size: 3.8rem;
+  }
+
+  .home__container {
+    flex-direction: column;
+  }
+
+  .home__quote.word_blurb {
+    display: none;
   }
 
   .home__quote {
@@ -119,7 +131,16 @@
   }
 
   .home__column-two {
-    display: none;
+    width: 100%;
+  }
+
+  .home__image-container {
+    justify-content: center;
+  }
+
+  .home__image-container img {
+    width: 100%;
+    margin-left: 0;
   }
 }
 
