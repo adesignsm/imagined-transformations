@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import sanityClient from "../../client";
 import "./About.css";
 import { useNav } from "../../Hooks/useNav";
-import ImageSlider from "../../Components/ImageSlider";
+// import ImageSlider from "../../Components/ImageSlider";
 
 export const About = () => {
   const [paragraphs, setParagraphs] = useState({});
@@ -82,9 +82,11 @@ export const About = () => {
             </p>
           </div>
         </div>
+        {/*
         <div className="image__container">
           <ImageSlider />
-        </div>
+        </div> 
+        */}
       </div>
     </section>
   );
