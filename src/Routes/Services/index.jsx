@@ -5,13 +5,6 @@ import ImageUrlBuilder from "@sanity/image-url";
 import "./Services.css";
 import { useNav } from "../../Hooks/useNav";
 
-import ANXIETY_ICON from '../../Assets/Icons/anxiety.png';
-import CONFIDENCE_ICON from '../../Assets/Icons/confidence.png';
-import FEAR_ICON from '../../Assets/Icons/fear.png';
-import PTSD_ICON from '../../Assets/Icons/ptsd.png';
-import SUCCESS_ICON from '../../Assets/Icons/success.png';
-import WELLNESS_ICON from '../../Assets/Icons/wellness.png';
-
 export const Services = () => {
   const [services, setServices] = useState({});
   const servicesRef = useNav("services");
