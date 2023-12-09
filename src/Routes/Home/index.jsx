@@ -64,7 +64,7 @@ export const Home = () => {
             {image.image1 && image.image2 && (
               <div className="home__image-container">
                 <img src={urlFor(image.image1).url()} />
-                <img src={urlFor(image.image2).url()} />
+                {/* <img src={urlFor(image.image2).url()} /> */}
               </div>
             )}
         </div>
