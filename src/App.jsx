@@ -23,7 +23,7 @@ const App = () => {
 
   return (
     <div className="App">
-      <Entry />
+      {/* <Entry /> */}
       <NavProvider>
         <Header />
         <Navigation />
