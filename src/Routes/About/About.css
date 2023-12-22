@@ -62,7 +62,7 @@
   }
 
   .about_content__container {
-    max-width: 100%;
+    max-width: 50%;
   }
 
   .about__header {
@@ -90,8 +90,15 @@
     padding-bottom: 1rem;
   }
   .image__container {
-    max-width: 50%;
+    max-width: 80% !important;
     height: auto;
+    margin: 0 auto;
+    align-items: flex-start;
+  }
+  .image__container img {
+    transform: scale(0.9);
+    height: auto;
+    width: 100%;
   }
 }
 

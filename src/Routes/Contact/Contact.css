@@ -164,6 +164,9 @@ textarea::placeholder {
     margin-top: 2rem;
   }
 
+  .secondary-contact__button a {
+    font-size: smaller;
+  }
 }
 
 /*Medium Screens and Devices (e.g.:TABLETS)*/
