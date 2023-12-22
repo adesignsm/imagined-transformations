@@ -131,6 +131,7 @@
   .about_content__container {
     width: 100%;
     margin-right: 2rem;
+    max-width: 100%;
   }
 
   .about__header {
@@ -152,10 +153,10 @@
   }
 
   .image__container {
-    max-width: 100%;
+    max-width: 100% !important;
     height: auto;
     padding-bottom: 3rem;
-    margin-left: 0;
+    margin: 0 auto;
   }
 
   .about__content p {
