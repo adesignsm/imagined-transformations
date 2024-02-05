@@ -1,20 +1,32 @@
 import React, { useEffect, useState } from "react";
+
 import sanityClient from "../../client";
+import ImageUrlBuilder from "@sanity/image-url";
+
 import "./About.css";
+
 import { useNav } from "../../Hooks/useNav";
 import ImageSlider from "../../Components/ImageSlider";
 
 export const About = () => {
   const [paragraphs, setParagraphs] = useState({});
+  const [aboutImage, setAboutImage] = useState('');
   const aboutRef = useNav("about");
+
+  const builder = ImageUrlBuilder(sanityClient);
+
+  const urlFor = (source) => {
+    return builder.image(source);
+  }
 
   const fetchData = async () => {
     try {
       const query = `*[_type == 'about-copy'][0]{
         about_paragraphs,
+        slider_images
       }`;
       const result = await sanityClient.fetch(query);
-      console.log(result.slider_images);
+      setAboutImage(result.slider_images[0].slider_image.asset._ref);
       setParagraphs(result);
     } catch (error) {
       console.error(error);
@@ -83,7 +95,10 @@ export const About = () => {
           </div>
         </div>
         <div className="image__container">
-          <ImageSlider />
+          {aboutImage && (
+            <img className='image' src={urlFor(aboutImage).url()} />
+          )}
+          {/* <ImageSlider /> */}
         </div>
       </div>
     </section>

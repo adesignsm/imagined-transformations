@@ -15,11 +15,11 @@ import { Testimonials } from "./Routes/Testimonials";
 import { NavProvider } from "./Context/NavContext";
 
 const App = () => {
-  // useEffect(() => {
-  //   setTimeout(() => {
-  //     $("#entry").fadeOut(1000);
-  //   }, 6000);
-  // }, []);
+  useEffect(() => {
+    setTimeout(() => {
+      $("#entry").fadeOut(1000);
+    }, 6000);
+  }, []);
 
   return (
     <div className="App">
